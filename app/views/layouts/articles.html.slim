@@ -1,0 +1,17 @@
+doctype html
+html
+  = render("head")
+  body.is-articles(class="is-#{params[:id]}")
+    .t-fixed-left-nav
+      .t-fixed-left-nav__start
+        = render "o_basic_header"
+        hr.a-hr-border
+        = render "o_basic_breadcrumbs"
+        hr.a-hr-border
+        = render "o_inline_form"
+        = render "o_basic_tabs"
+        .t-fixed-left-nav__body
+          .container.is-mw-100pc
+            = yield
+      .t-fixed-left-nav__end
+        = render "o_icon_blocks"

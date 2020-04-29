@@ -1,0 +1,182 @@
+=list
+  ol
+    list-style-type: decimal
+  >ul,
+    list-style-type: disc
+  >ol
+    list-style-type: decimal
+  li
+    ul,
+    ol
+      +margin(vertical, .25em)
+    >ul
+      list-style-type: circle
+      >li
+        >ul
+          list-style-type: square
+
+=long-text-style($background: $base, $font: $default-text)
+  >*:first-child
+    margin-top: 0
+  >*:last-child
+    margin-bottom: 0
+  h2
+    +text-block(1.375em 1.6 0 1em, 600)
+    border-left: .375em solid $accent
+    background-color: $shade
+    padding: .5em .625em
+  h1 + h2
+    margin-top: 1em
+  * + h2
+    margin-top: 1.4em
+  h2 + h3
+    margin-top: 1.4em
+  * + h2,
+  * + h3,
+  * + h4,
+  * + h5
+    margin-top: 1.5em
+  h3
+    +text-block(1.25em 1.6, 600)
+    margin-bottom: .625em
+    padding-bottom: .1875em
+    border-bottom: solid 1px $border
+  h4
+    +text-block(1.125em 1.6, 600)
+    margin-bottom: .625em
+  h5
+    +text-block(1em 1.6, 600)
+    margin-bottom: .625em
+  p
+    +text-block(1em 1.8)
+    margin-bottom: 1.5em
+  a
+    +link-text
+    word-break: break-all
+    +hover-link-reversal
+    p &
+      word-break: break-all
+    &:hover
+      img
+        border-color: mix($font, $background, 16%)
+  code
+    tab-size: 2
+    hyphens: none
+
+  pre
+    padding: 0
+    margin-bottom: 1.5em
+    code
+      border: solid 1px mix($font, $background, 20%)
+      +text-block(.9375em 1.5)
+      overflow: auto
+      display: block
+      width: 100%
+      padding: .875em
+  p,
+  li
+    code
+      +text-block(.875em 1.7, $default-text inline-flex)
+      align-items: center
+      letter-spacing: 0
+      +padding(horizontal, .25rem)
+      border: solid 1px mix($font, $background, 20%)
+      background-color: mix($font, $background, 4%)
+      +margin(horizontal, .25rem)
+      border-radius: .125rem
+  hr
+    display: block
+    +margin(vertical, 1.5em 2em)
+    &:before
+      display: block
+      +text-block(.9375rem 1, center)
+      +letter-spacing-center(.25rem)
+  img
+    max-width: 100%
+    height: auto
+    display: block
+    +margin(horizontal, auto)
+    border: 1px solid transparent
+    +media-breakpoint-down(sm)
+      max-width: 100% !important
+    &.is-xs
+      max-width: 10em
+    &.is-sm
+      max-width: 20em
+    &.is-md
+      max-width: 30em
+  +list
+  ul,
+  ol
+    list-style-position: outside
+    margin-left: 1.75em
+    margin-bottom: 1.5em
+    &:last-child
+      margin-bottom: 0
+  li
+    +text-block(1em 1.607)
+    +margin(vertical, .25em)
+    &:first-child
+      margin-top: 0
+    &:last-child
+      margin-bottom: 0
+    input
+      margin-right: .25rem
+  p + ul,
+  p + ol
+    margin-top: 1em
+
+  table
+    width: 100%
+    margin-bottom: 2em
+
+  th,
+  td
+    border: solid 1px mix($font, $background, 40%)
+    padding: .5em .625em
+    +text-block(.875em 1.6)
+
+  th
+    background-color: mix($font, $background, 8%)
+
+  tbody tr
+    &:nth-child(even)
+      background-color: mix($font, $background, 2%)
+
+  blockquote
+    padding-left: 1.125em
+    +margin(vertical, 1.5em 2em)
+    +position(relative)
+    border-left: solid .25em mix($font, $background, 10%)
+    +list
+    p + &
+      +margin(vertical, 3em 2.5em)
+    code
+      font-style: normal
+    >*:last-child
+      margin-bottom: 0 !important
+
+  details
+    +text-block(.875rem 1.8 1.5em)
+    border: solid 1px mix($font, $background, 20%)
+    border-radius: .25rem
+    summary
+      +text-block(1em 1.8 0)
+      cursor: pointer
+      padding: .5em 1em
+      outline: none
+      & + div
+        padding: .5em 1em
+        *:last-child
+          margin-bottom: 0
+    &[open] summary
+      border-bottom: solid 1px mix($font, $background, 20%)
+
+  iframe
+    display: block
+    max-width: 100%
+    +margin(vertical, 1.5em 2em)
+    +margin(horizontal, auto)
+
+  *
+    +list

@@ -1,0 +1,8 @@
+doctype html
+html
+  = render("head")
+  body.is-lp(class="is-#{params[:id]}")
+    .t-lp
+      = render "o_basic_header"
+      hr.a-hr-border
+      = yield

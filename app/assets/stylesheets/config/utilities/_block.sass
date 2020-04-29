@@ -1,0 +1,42 @@
+.is-scrollable-x
+  max-width: 100%
+  overflow-x: auto
+  -webkit-overflow-scrolling: touch
+
+.row
+  &.is-reversal
+    flex-direction: row-reverse
+
+.is-as-flex-end
+  align-self: flex-end !important
+
+.is-ai-flex-start
+  align-items: flex-start !important
+
+body
+  .is-s-y
+    overflow-y: auto
+    scroll-behavior: smooth
+  .is-as-center
+    align-self: center
+  .is-as-flex-start
+    align-self: flex-start
+  .is-ta-center
+    text-align: center
+  .is-p-0
+    padding: 0 !important
+  .is-pt-0
+    padding-top: 0 !important
+  .is-f-100
+    flex: 100
+  .is-d-block-sm-down
+    +media-breakpoint-down(sm)
+      display: block
+  .is-jc-center
+    justify-content: center
+  .is-fb-7em
+    flex-basis: 7em !important
+
+.is-sticky-down-sm
+  +media-breakpoint-down(sm)
+    +position(sticky, left 0, top 0)

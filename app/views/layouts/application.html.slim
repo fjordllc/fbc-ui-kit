@@ -1,0 +1,27 @@
+doctype html
+html
+  = render("head")
+  body.is-application.is-t-fixed-left-nav(class="is-#{params[:id]}")
+    .t-fixed-left-nav
+      .t-fixed-left-nav__start
+        = render "o_basic_header"
+        hr.a-hr-border
+        - if content_for?(:breadcrumbs)
+          = render "o_basic_breadcrumbs"
+          hr.a-hr-border
+        - if content_for?(:page_header)
+          = render "page_header", title: yield(:page_header)
+        - if content_for?(:flash_alert)
+          = render "flash_alert"
+        - if content_for?(:flash_notice)
+          = render "flash_notice"
+        - if content_for?(:horizontal_filter)
+          hr.a-hr-border
+          = render "horizontal_filter"
+        - if params[:id].include?("atoms/")
+          = render "atoms_tabs", active: 1
+        .t-fixed-left-nav__body
+          .container.is-mw-100pc
+            = yield
+      .t-fixed-left-nav__end
+        = render "o_icon_blocks"

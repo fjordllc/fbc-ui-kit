@@ -1,0 +1,124 @@
+=button-base
+  text-align: center
+  text-transform: none
+  display: inline-flex
+  border: solid 1px
+  border-radius: .25rem
+  line-height: 1
+  white-space: nowrap
+  text-decoration: none
+  cursor: pointer
+  user-select: none
+  align-items: center
+  justify-content: center
+  transition: all .2s ease-out
+  &.is-block
+    display: flex
+    width: 100%
+    flex-wrap: wrap
+  &:hover
+    box-shadow: rgba(black, .2) 0px 3px 1px -2px, rgba(black, .14) 0px 2px 2px 0px, rgba(black, .12) 0px 1px 5px 0px
+  &:focus
+    outline: none
+  &:disabled
+    cursor: default
+    pointer-events: none
+  +media-breakpoint-up(md)
+    .is-button-group &
+      margin-right: -1px
+    .is-button-group &:hover,
+    .is-button-group &:active
+      +position(relative)
+    .is-button-group li:not(:first-child):not(:last-child) &
+      border-radius: 0
+    .is-button-group li:first-child &
+      +border-radius(right, 0)
+    .is-button-group li:last-child &
+      +border-radius(left, 0)
+  i:first-child
+    margin-right: .4em
+  i:last-child
+    margin-left: .4em
+  i:first-child:last-child
+    +margin(horizontal, 0)
+
+=input-button-base
+  display: inline-block
+  vertical-align: middle
+  &.is-block
+    width: 100%
+    display: block
+
+=button-color($color)
+  background-color: $color
+  $text-color: if(luma($color) > 50, $default-text, $reversal-text)
+  color: $text-color
+  border-color: if(luma($color) > 80, shade($color, 18%), $color)
+  &:focus,
+  &:active
+    box-shadow: 0 0 0 .1875rem rgba($color, .25)
+  &:hover,
+  &:focus,
+  &:active
+    $button-color: darken($color, 10%)
+    background-color: $button-color
+    border-color: if(luma($color) > 80, shade($color, 24%), $color)
+  &.is-disabled,
+  &:disabled
+    color: rgba($text-color, .4)
+    pointer-events: none
+    border-color: shade($color, 6%)
+
+=button-size($font-size: 1rem, $horizontal: .75, $vertical: .625)
+  font-size: $font-size
+  +padding(horizontal, #{strip_unit($horizontal * $font-size)}em)
+  @if unitless_number($vertical)
+    min-height: #{strip_unit(($font-size * 1.45) + (($vertical * $font-size) * 2))}em
+  @else
+    min-height: $vertical
+  body.is-ie11 &
+    @if unitless_number($vertical)
+      height: #{strip_unit(($font-size * 1.45) + (($vertical * $font-size) * 2))}em
+    @else
+      height: $vertical
+
+.a-button
+  +button-base
+
+  // color
+  &.is-primary
+    +button-color($primary)
+  &.is-secondary
+    +button-color($secondary)
+  &.is-info
+    +button-color($info)
+  &.is-success
+    +button-color($success)
+  &.is-warning
+    +button-color($warning)
+  &.is-danger
+    +button-color($danger)
+  &.is-disabled
+    +button-color($disabled)
+
+  //size
+  &.is-xs
+    +button-size(.75rem, 1, 2em)
+    font-weight: 600
+  &.is-sm
+    +button-size(.875rem, 1.25, .6875)
+    font-weight: 600
+  &.is-md
+    +button-size(1rem, 1, .625)
+    font-weight: 600
+  &.is-lg
+    +button-size(1.25rem, 1, 2.75rem)
+    font-weight: 600
+  &.is-xl
+    +button-size(1.5rem, .75, .25)
+    font-weight: 600
+
+  &.is-icon
+    +padding(horizontal, .5em)
+    i
+      font-size: 1.125em

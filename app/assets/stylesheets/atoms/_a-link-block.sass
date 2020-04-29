@@ -1,0 +1,21 @@
+.a-link-block
+  min-height: 2.75rem
+  +padding(vertical, .75em)
+  line-height: 1.45
+  color: $default-text
+  +flex-link
+  transition: all .2s ease-out
+
+.a-link-block__label
+  flex: 1
+
+.a-link-block__icon
+  width: 1em
+  display: flex
+  align-items: center
+  justify-content: center
+  &:first-child
+    margin-right: .75em
+    font-size: 1.25em
+  &:last-child
+    +margin(horizontal, .875em -.5em)

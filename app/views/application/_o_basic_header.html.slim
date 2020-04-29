@@ -1,0 +1,9 @@
+header.o-basic-header
+  .container.is-mw-100pc
+    .o-basic-header__inner
+      .o-basic-header__start
+        h1.a-brand-logo
+          = link_to root_path, class: "a-brand-logo__link" do
+           | FBC UI KIT
+      .o-basic-header__end
+        = render "header_nav"

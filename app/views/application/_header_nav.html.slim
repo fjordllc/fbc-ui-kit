@@ -1,0 +1,82 @@
+.o-horizontal-icon-blocks
+  ul.o-horizontal-icon-blocks__items
+    li.o-horizontal-icon-blocks__item
+      = link_to "", class: "a-icon-square" do
+        .a-icon-square__icon
+          i.fas.fa-poo
+        .a-icon-square__label
+          | ADMIN
+    li.o-horizontal-icon-blocks__item
+      label.a-icon-square(for="toggle-dropdown-menu")
+        .a-icon-square__icon
+          i.fas.fa-bars
+        .a-icon-square__label
+          | MENU
+      input.a-hidden-checkbox#toggle-dropdown-menu(type="checkbox")
+      .o-dropdown
+        label.o-dropdown__overlay(for="toggle-dropdown-menu")
+        .o-dropdown__inner
+          .m-link-blocks
+            .m-link-blocks__items
+              .m-link-blocks__item
+                = link_to "", class: "a-link-block" do
+                  .a-link-block__icon
+                    i.fas.fa-pastafarianism
+                  .a-link-block__label
+                    | ボタン一覧
+              .m-link-blocks__item
+                = link_to "", class: "a-link-block" do
+                  .a-link-block__icon
+                    i.fas.fa-home
+                  .a-link-block__label
+                    | ボタン一覧
+              .m-link-blocks__item
+                = link_to "", class: "a-link-block" do
+                  .a-link-block__icon
+                    i.fas.fa-ad
+                  .a-link-block__label
+                    | ボタン一覧
+              .m-link-blocks__item
+                = link_to "", class: "a-link-block" do
+                  .a-link-block__icon
+                    i.fas.fa-ad
+                  .a-link-block__label
+                    | ボタン一覧ボタン一覧
+    li.o-horizontal-icon-blocks__item
+      label.a-icon-square(for="toggle-dropdown-notice")
+        .a-icon-square__icon
+          i.fas.fa-bell
+        .a-icon-square__label
+          | 通知
+        .a-count-badge
+          | 12
+      input.a-hidden-checkbox#toggle-dropdown-notice(type="checkbox")
+      .o-dropdown
+        label.o-dropdown__overlay(for="toggle-dropdown-notice")
+        .o-dropdown__inner
+          .m-link-blocks
+            .m-link-blocks__items
+              .m-link-blocks__item
+                = link_to "", class: "a-link-block" do
+                  .a-link-block__icon
+                    i.fas.fa-pastafarianism
+                  .a-link-block__label
+                    | ボタン一覧
+              .m-link-blocks__item
+                = link_to "", class: "a-link-block" do
+                  .a-link-block__icon
+                    i.fas.fa-home
+                  .a-link-block__label
+                    | ボタン一覧
+              .m-link-blocks__item
+                = link_to "", class: "a-link-block" do
+                  .a-link-block__icon
+                    i.fas.fa-ad
+                  .a-link-block__label
+                    | ボタン一覧
+              .m-link-blocks__item
+                = link_to "", class: "a-link-block" do
+                  .a-link-block__icon
+                    i.fas.fa-ad
+                  .a-link-block__label
+                    | ボタン一覧ボタン一覧

@@ -1,0 +1,55 @@
+- content_for(:page_header, "Atoms")
+
+.t-grids
+  .t-grids__item.is-col-6
+    .o-card
+      .o-card__header
+        h3.o-card__title
+          | input(type="text")
+      hr.a-hr-border
+      .o-card__body
+        .container
+          .o-card__blocks
+            .t-grids
+              .t-grids__item.is-col-6
+                .m-style-block
+                  .m-style-block__start
+                    input.a-text-input(type="text")
+                  .m-style-block__end
+                    pre.a-basic-code
+                      code
+                        | input.a-text-input(type="text")
+              .t-grids__item.is-col-6
+                .m-style-block
+                  .m-style-block__start
+                    input.a-text-input.is-block(type="text")
+                  .m-style-block__end
+                    pre.a-basic-code
+                      code
+                        | input.a-text-input.is-block(type="text")
+  .t-grids__item.is-col-6
+    .o-card
+      .o-card__header
+        h3.o-card__title
+          | textarea
+      hr.a-hr-border
+      .o-card__body
+        .container
+          .o-card__blocks
+            .t-grids
+              .t-grids__item.is-col-6
+                .m-style-block
+                  .m-style-block__start
+                    textarea.a-text-input
+                  .m-style-block__end
+                    pre.a-basic-code
+                      code
+                        | textarea.a-text-input
+              .t-grids__item.is-col-6
+                .m-style-block
+                  .m-style-block__start
+                    textarea.a-text-input.is-block
+                  .m-style-block__end
+                    pre.a-basic-code
+                      code
+                        | textarea.a-text-input.is-block

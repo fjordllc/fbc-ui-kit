@@ -1,0 +1,57 @@
+.o-card
+  .m-basic-form
+    .m-basic-form__items
+      .m-form-item
+        .m-form-item__start
+          label.a-form-label
+            | テキストインプット
+        .m-form-item__end
+          input.a-text-input.is-block(type="text")
+          .a-form-help
+            p
+              = link_to "", class: "" do
+                | パスワードを忘れた
+      .m-form-item
+        .m-form-item__start
+          label.a-form-label
+            | テキストインプット
+        .m-form-item__end
+          input.a-text-input.is-block(type="text")
+      .m-form-item
+        .m-form-item__start
+          label.a-form-label
+            | セレクト
+        .m-form-item__end
+          .a-form-select.is-block
+            select
+              option select
+              option select
+              option select
+              option select
+      .m-form-item
+        .m-form-item__start
+          label.a-form-label
+            | チェックボックス
+        .m-form-item__end
+          .m-check-list
+            ul.m-check-list__items
+              li.m-check-list__item
+                label.a-form-checkbox
+                  input.a-form-checkbox__input(type="checkbox")
+                  span.a-form-checkbox__label
+                    | チェックボックス
+              li.m-check-list__item
+                label.a-form-checkbox
+                  input.a-form-checkbox__input(type="checkbox")
+                  span.a-form-checkbox__label
+                    | チェックボックス
+              li.m-check-list__item
+                label.a-form-checkbox
+                  input.a-form-checkbox__input(type="checkbox")
+                  span.a-form-checkbox__label
+                    | チェックボックス
+                    | ラジオボタン
+
+    .m-basic-form__actions
+      .m-form-action
+        input.a-button.is-primary.is-md.is-block(type="submit" value="あああああ")

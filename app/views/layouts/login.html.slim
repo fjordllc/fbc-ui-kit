@@ -1,0 +1,24 @@
+doctype html
+html
+  = render("head")
+  body.is-application.is-t-auth(class="is-#{params[:id]}")
+    .t-auth
+      .container.is-sm
+        .t-auth__inner
+          .t-auth__header
+            .a-brand-logo
+              = link_to root_path, class: "a-brand-logo__link" do
+                | FBC UI KIT
+            h1.t-auth__title
+              | ログイン
+          .t-auth__body
+             = yield
+          footer.t-auth__footer
+            .m-auth-nav
+              ul.m-auth-nav__items
+                li.m-auth-nav__item
+                  = link_to "", class: "a-text-link" do
+                    | 利用規約
+                li.m-auth-nav__item
+                  = link_to "", class: "a-text-link" do
+                    | プライバシーポリシー

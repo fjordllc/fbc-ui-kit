@@ -1,0 +1,69 @@
+- content_for(:page_header, "Atoms")
+- sizes = %w[xs sm md lg xl]
+- ui_colors = %w[secondary primary info success warning danger disabled]
+
+.t-grids
+  - sizes.each do |size|
+    .t-grids__item.is-col-6
+      .o-card
+        .o-card__header
+          h3.o-card__title
+            | Size #{size}
+        hr.a-hr-border
+        .o-card__body
+          .container
+            .o-card__blocks
+              - ui_colors.each do |color|
+                .row
+                  .col-xs-6.col-lg-4
+                    .m-style-block
+                      .m-style-block__start
+                        a(class="a-button is-#{size} is-#{color}")
+                          | Link
+                      .m-style-block__end
+                        pre.a-basic-code
+                          code
+                            | .a-button.is-#{size}.is-#{color}
+                  .col-xs-6.col-lg-4
+                    .m-style-block
+                      .m-style-block__start
+                        button(class="a-button is-#{size} is-#{color}")
+                          | Button
+                      .m-style-block__end
+                        pre.a-basic-code
+                          code
+                            | .a-button.is-#{size}.is-#{color}
+                  .col-xs-6.col-lg-4
+                    .m-style-block
+                      .m-style-block__start
+                        input(class="a-button is-#{size} is-#{color}" type="submit" value="Submit")
+                      .m-style-block__end
+                        pre.a-basic-code
+                          code
+                            | .a-button.is-#{size}.is-#{color}
+                  .col-xs-6.col-lg-4
+                    .m-style-block
+                      .m-style-block__start
+                        a(class="a-button is-#{size} is-#{color} is-block")
+                          | Block Link
+                      .m-style-block__end
+                        pre.a-basic-code
+                          code
+                            |.is-button.is-#{size}.is-#{color}.is-block
+                  .col-xs-6.col-lg-4
+                    .m-style-block
+                      .m-style-block__start
+                        button(class= "a-button is-#{size} is-#{color} is-block")
+                          | Block Button
+                      .m-style-block__end
+                        pre.a-basic-code
+                          code
+                            | .is-button.is-#{size}.is-#{color}.is-block
+                  .col-xs-6.col-lg-4
+                    .m-style-block
+                      .m-style-block__start
+                        input(class="a-button is-#{size} is-#{color} is-block" type="submit" value="Block Submit")
+                      .m-style-block__end
+                        pre.a-basic-code
+                          code
+                            | .is-button.is-#{size}.is-#{color}.is-block

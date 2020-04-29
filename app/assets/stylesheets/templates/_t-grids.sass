@@ -1,0 +1,25 @@
+$grid-gap: 1.5rem !default
+$grid-columns-count: 12
+
+.t-grids
+  display: grid
+  grid-template-columns: repeat(#{$grid-columns-count}, 1fr)
+  grid-gap: $grid-gap
+
+.t-grids__item
+  height: 100%
+  @for $i from 1 through $grid-columns-count
+    &.is-col-#{$i}
+      grid-column: $i span
+    @each $breakpoint in map-keys($grid-breakpoints)
+      +media-breakpoint-down(#{$breakpoint})
+        .is-col-#{$breakpoint}-#{$i}
+          grid-column: $i span
+
+    @for $i from 1 through $grid-columns-count
+    &.is-row-#{$i}
+      grid-row: $i span
+    @each $breakpoint in map-keys($grid-breakpoints)
+      +media-breakpoint-down(#{$breakpoint})
+        .is-row-#{$breakpoint}-#{$i}
+          grid-row: $i span

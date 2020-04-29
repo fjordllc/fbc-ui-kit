@@ -1,0 +1,24 @@
+.o-basic-tabs
+  .container.is-mw-100pc
+    .o-basic-tabs__items
+      .o-basic-tabs__item
+        = link_to "/atoms/button", class: "o-basic-tabs__item-link #{current?("atoms/button") ? "is-active" : ""}" do
+          | Button
+      .o-basic-tabs__item
+        = link_to "/atoms/badge", class: "o-basic-tabs__item-link #{current?("atoms/badge") ? "is-active" : ""}" do
+          | Badge
+      .o-basic-tabs__item
+        = link_to "/atoms/text_input", class: "o-basic-tabs__item-link #{current?("atoms/text_input") ? "is-active" : ""}" do
+          | TextInput
+      .o-basic-tabs__item
+        = link_to "/atoms/checkbox", class: "o-basic-tabs__item-link #{current?("atoms/checkbox") ? "is-active" : ""}" do
+          | Checkbox
+      .o-basic-tabs__item
+        = link_to "/atoms/radio", class: "o-basic-tabs__item-link #{current?("atoms/radio") ? "is-active" : ""}" do
+          | Radio
+      .o-basic-tabs__item
+        = link_to "/atoms/select", class: "o-basic-tabs__item-link #{current?("atoms/select") ? "is-active" : ""}" do
+          | Select
+      .o-basic-tabs__item
+        = link_to "/atoms/all", class: "o-basic-tabs__item-link #{current?("atoms/all") ? "is-active" : ""}" do
+          | All
