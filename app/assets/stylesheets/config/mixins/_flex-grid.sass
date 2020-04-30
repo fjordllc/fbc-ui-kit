@@ -1,5 +1,6 @@
-=flex-grid($gutter: 1rem, $flex-wrap: wrap)
+=flex-grid($gutter: 1rem, $flex-wrap: wrap, $justify-content: flex-start)
   display: flex
   +margin(horizontal, calc(#{$gutter} / -2))
+  justify-content: $justify-content
   >*
     +padding(horizontal, calc(#{$gutter} / 2))
