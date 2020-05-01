@@ -69,6 +69,24 @@
     pointer-events: none
     border-color: shade($color, 6%)
 
+=border-button-color($color)
+  color: $color
+  border-color: $color
+  &:focus,
+  &:active
+    box-shadow: 0 0 0 .1875rem rgba($color, .25)
+  &:hover,
+  &:focus,
+  &:active
+    $button-color: darken($color, 10%)
+    background-color: rgba($color, .1)
+    border-color: $button-color
+  &.is-disabled,
+  &:disabled
+    color: rgba($color, .4)
+    pointer-events: none
+    border-color: shade($color, 6%)
+
 =button-size($font-size: 1rem, $horizontal: .75, $vertical: .625)
   font-size: $font-size
   +padding(horizontal, #{strip_unit($horizontal * $font-size)}em)
@@ -100,6 +118,24 @@
     +button-color($danger)
   &.is-disabled
     +button-color($disabled)
+    pointer-events: none
+
+  // border-color
+  &.is-border-primary
+    +border-button-color($primary)
+  &.is-border-secondary
+    +border-button-color($secondary)
+  &.is-border-info
+    +border-button-color($info)
+  &.is-border-success
+    +border-button-color($success)
+  &.is-border-warning
+    +border-button-color($warning)
+  &.is-border-danger
+    +border-button-color($danger)
+  &.is-border-disabled
+    +border-button-color($disabled)
+    pointer-events: none
 
   //size
   &.is-xs

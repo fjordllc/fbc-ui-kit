@@ -67,3 +67,58 @@
                         pre.a-basic-code
                           code
                             | .is-button.is-#{size}.is-#{color}.is-block
+
+              - ui_colors.each do |color|
+                .row
+                  .col-xs-6.col-lg-4
+                    .m-style-block
+                      .m-style-block__start
+                        a(class="a-button is-#{size} is-border-#{color}")
+                          | Link
+                      .m-style-block__end
+                        pre.a-basic-code
+                          code
+                            | .a-button.is-#{size}.is-border-#{color}
+                  .col-xs-6.col-lg-4
+                    .m-style-block
+                      .m-style-block__start
+                        button(class="a-button is-#{size} is-border-#{color}")
+                          | Button
+                      .m-style-block__end
+                        pre.a-basic-code
+                          code
+                            | .a-button.is-#{size}.is-border-#{color}
+                  .col-xs-6.col-lg-4
+                    .m-style-block
+                      .m-style-block__start
+                        input(class="a-button is-#{size} is-border-#{color}" type="submit" value="Submit")
+                      .m-style-block__end
+                        pre.a-basic-code
+                          code
+                            | .a-button.is-#{size}.is-border-#{color}
+                  .col-xs-6.col-lg-4
+                    .m-style-block
+                      .m-style-block__start
+                        a(class="a-button is-#{size} is-border-#{color} is-block")
+                          | Block Link
+                      .m-style-block__end
+                        pre.a-basic-code
+                          code
+                            |.is-button.is-#{size}.is-border-#{color}.is-block
+                  .col-xs-6.col-lg-4
+                    .m-style-block
+                      .m-style-block__start
+                        button(class= "a-button is-#{size} is-border-#{color} is-block")
+                          | Block Button
+                      .m-style-block__end
+                        pre.a-basic-code
+                          code
+                            | .is-button.is-#{size}.is-border-#{color}.is-block
+                  .col-xs-6.col-lg-4
+                    .m-style-block
+                      .m-style-block__start
+                        input(class="a-button is-#{size} is-border-#{color} is-block" type="submit" value="Block Submit")
+                      .m-style-block__end
+                        pre.a-basic-code
+                          code
+                            | .is-button.is-#{size}.is-border-#{color}.is-block
