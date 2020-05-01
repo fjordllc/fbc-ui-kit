@@ -1,0 +1,24 @@
+.m-article-attributes
+  display: flex
+
+.m-article-attributes__start
+  margin-right: 1em
+
+.m-article-attributes__author-image
+  +size(4em)
+  border-radius: 50%
+  width: 4em
+
+.m-article-attributes__title
+  +text-block(1.25em 1.38, 600)
+  margin-bottom: .125em
+
+.m-article-attributes__date
+  +text-block(.875em 1.45, $muted-text)
+
+.m-article-attributes__author
+  +text-block(.875em 1.45, $muted-text flex)
+  align-items: center
+  .a-circle-avatar
+    +size(1.428em)
+    margin-right: .25em

@@ -2,30 +2,15 @@
   .container
     .o-basic-main-visual__inner
       | あああああああ
-hr.a-hr-border
 .t-lp__contents
   .m-lp-content
     .container
       .m-lp-content__inner
         .m-lp-content__header
           h2.m-lp-content__title
-            | 現場のエンジニア
+            | お知らせ
         .m-lp-content__body
-          .m-featured-articles
-            .m-featured-articles__items
-              .t-grids
-                .t-grids__item.is-col-4
-                  .m-featured-articles__item
-                    .o-card
-                      = image_tag("https://via.placeholder.com/500")
-                .t-grids__item.is-col-4
-                  .m-featured-articles__item
-                    .o-card
-                      = image_tag("https://via.placeholder.com/500")
-                .t-grids__item.is-col-4
-                  .m-featured-articles__item
-                    .o-card
-                      = image_tag("https://via.placeholder.com/500")
+          = render "/lp/featured_articles"
   hr.a-hr-border
   .m-lp-content
     .container
@@ -34,18 +19,3 @@ hr.a-hr-border
           h2.m-lp-content__title
             | ああああああああああああ
         .m-lp-content__body
-          .m-featured-articles
-            .m-featured-articles__items
-              .t-grids
-                .t-grids__item.is-col-4
-                  .m-featured-articles__item
-                    .o-card
-                      = image_tag("https://via.placeholder.com/500")
-                .t-grids__item.is-col-4
-                  .m-featured-articles__item
-                    .o-card
-                      = image_tag("https://via.placeholder.com/500")
-                .t-grids__item.is-col-4
-                  .m-featured-articles__item
-                    .o-card
-                      = image_tag("https://via.placeholder.com/500")
