@@ -14,14 +14,14 @@ html
           .t-auth__body
              = yield
           footer.t-auth__footer
-            .m-inline-list
-              ul.m-inline-list__items
-                li.m-inline-list__item
+            .m-inline-list-nav
+              ul.m-inline-list-nav__items
+                li.m-inline-list-nav__item
                   = link_to root_path, class: "a-text-link" do
                     | トップページ
-                li.m-inline-list__item
+                li.m-inline-list-nav__item
                   = link_to "", class: "a-text-link" do
                     | 利用規約
-                li.m-inline-list__item
+                li.m-inline-list-nav__item
                   = link_to "", class: "a-text-link" do
                     | プライバシーポリシー
