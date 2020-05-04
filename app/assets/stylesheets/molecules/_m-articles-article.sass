@@ -1,3 +1,17 @@
-.m-articles-article__end
+.m-articles-article
   .m-article-attributes
-    padding: .75em 1em
+    padding: .75rem 1rem
+  .m-articles-article + &
+    border-top: solid 1px $border
+
+a.m-articles-article
+  +block-link
+  color: inherit
+  transition: all .2s ease-out
+  &:hover
+    border-color: $primary
+    box-shadow: rgba($primary, .2) 0 0 0 2px
+    +position(relative)
+
+.m-articles-article__image
+  width: 100%

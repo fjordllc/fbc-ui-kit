@@ -1,0 +1,15 @@
+.o-vertical-articles
+  .m-articles-article
+    font-size: 1.125rem
+    border: solid 1px $border
+  a.m-articles-article
+    &:hover
+      border-color: $primary
+  .m-articles-article:first-child
+    +border-radius(top, .25rem)
+  .m-articles-article:last-child
+    +border-radius(bottom, .25rem)
+  .m-articles-article:not(:first-child)
+    margin-top: -1px
+  .m-article-attributes__list
+    font-size: .875rem

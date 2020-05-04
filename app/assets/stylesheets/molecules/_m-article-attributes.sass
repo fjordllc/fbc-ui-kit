@@ -1,7 +1,5 @@
 .m-article-attributes
   display: flex
-  .m-inline-list
-    font-size: .875rem
 
 .m-article-attributes__end
   margin-left: 1em
@@ -9,17 +7,16 @@
 .m-article-attributes__image
   +size(4em)
   border-radius: 50%
-  width: 4em
 
 .m-article-attributes__title
-  +text-block(1.25em 1.38, 600)
-  margin-bottom: .125em
+  +text-block(1em 1.38, 600)
+  margin-bottom: .1875em
 
 .m-article-attributes__date
-  +text-block(1em 1.45, $muted-text)
+  +text-block(1.45, $muted-text)
 
 .m-article-attributes__author
-  +text-block(1em 1.45, $muted-text flex)
+  +text-block(1.45, $muted-text flex)
   align-items: center
   .a-circle-image
     +size(1.428em)

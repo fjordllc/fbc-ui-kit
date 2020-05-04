@@ -10,7 +10,38 @@
           h2.m-lp-content__title
             | お知らせ
         .m-lp-content__body
-          = render "/lp/featured_articles"
+           .m-lp-content__row
+              .t-grids
+                .t-grids__item.is-col-7
+
+                  .o-card
+                    .m-articles-article
+                      .m-articles-article__start
+                        = image_tag("https://via.placeholder.com/500", class: "m-articles-article__image")
+                      .m-articles-article__end
+                        .m-article-attributes
+                          .m-article-attributes__start
+                            .m-article-attributes__image
+                              = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
+                          .m-article-attributes__end
+                            h2.m-article-attributes__title
+                              | どんな小さな羽さえもな羽さえもそよがぬ
+                            .m-inline-list
+                              .m-inline-list__items
+                                .m-inline-list__item
+                                  date.m-article-attributes__date
+                                    | 2020年12月24日
+                                .m-inline-list__item
+                                  .m-article-attributes__author
+                                    = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
+                                    .m-article-attributes__author-name
+                                      | machida
+
+
+                .t-grids__item.is-col-5
+                  = render "/lp/vertical_articles"
+           .m-lp-content__row
+              = render "/lp/featured_articles"
   hr.a-hr-border
   .m-lp-content
     .container
