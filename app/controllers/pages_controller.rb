@@ -7,14 +7,14 @@ class PagesController < ApplicationController
 
   def layout_for_page
     case params[:id]
-    when 'index'
-      'application'
-    when 'articles'
-      'articles'
-    when 'welcome'
-      'lp'
-    when 'login'
-      'login'
+    when "index"
+      "application"
+    when "articles"
+      "articles"
+    when "welcome", "pp", "tos"
+      "lp"
+    when "login", "signup"
+      "auth"
     else
       'application'
     end

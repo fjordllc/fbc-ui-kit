@@ -1,3 +1,5 @@
+$displays: inline, inline-block, block, inline-block, flex, inline-flex, sticky, hidden
 body
-  .is-dp-inline
-    display: inline
+  @each $display in $displays
+    .is-d-#{$display}
+      display: $display
