@@ -10,38 +10,18 @@
           h2.m-lp-content__title
             | お知らせ
         .m-lp-content__body
-           .m-lp-content__row
-              .t-grids
-                .t-grids__item.is-col-7
-
-                  .o-card
-                    .m-articles-article
-                      .m-articles-article__start
-                        = image_tag("https://via.placeholder.com/500", class: "m-articles-article__image")
-                      .m-articles-article__end
-                        .m-article-attributes
-                          .m-article-attributes__start
-                            .m-article-attributes__image
-                              = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
-                          .m-article-attributes__end
-                            h2.m-article-attributes__title
-                              | どんな小さな羽さえもな羽さえもそよがぬ
-                            .m-inline-list
-                              .m-inline-list__items
-                                .m-inline-list__item
-                                  date.m-article-attributes__date
-                                    | 2020年12月24日
-                                .m-inline-list__item
-                                  .m-article-attributes__author
-                                    = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
-                                    .m-article-attributes__author-name
-                                      | machida
-
-
-                .t-grids__item.is-col-5
-                  = render "/lp/vertical_articles"
-           .m-lp-content__row
-              = render "/lp/featured_articles"
+          .m-lp-content__row
+            .t-grids
+              .t-grids__item.is-col-8
+                = render "/lp/article_summary"
+              .t-grids__item.is-col-4
+                = render "/lp/vertical_articles"
+          .m-lp-content__row
+            = render "/lp/featured_articles"
+          .m-lp-content__row
+            .t-grids
+              .t-grids__item.is-col-12
+                = render "/lp/article_summary"
   hr.a-hr-border
   .m-lp-content
     .container
@@ -50,3 +30,77 @@
           h2.m-lp-content__title
             | 学習の流れ
         .m-lp-content__body
+          .m-lp-content__row
+            .m-numberd-item
+              .m-numberd-item__start
+                .m-numberd-item__number
+                  | 1
+              .m-numberd-item__end
+                .m-numberd-item__title
+                  | どんな小さな羽さえもそよどんな小さな羽さえもそよ
+                .m-numberd-item__description
+                  p
+                    | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
+          .m-lp-content__row
+            .m-numberd-item
+              .m-numberd-item__start
+                .m-numberd-item__number
+                  | 2
+              .m-numberd-item__end
+                .m-numberd-item__title
+                  | どんな小さな羽さえもそよどんな小さな羽さえもそよ
+                .m-numberd-item__description
+                  p
+                    | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
+          .m-lp-content__row
+            .m-numberd-item
+              .m-numberd-item__start
+                .m-numberd-item__number
+                  | 3
+              .m-numberd-item__end
+                .m-numberd-item__title
+                  | どんな小さな羽さえもそよどんな小さな羽さえもそよ
+                .m-numberd-item__description
+                  p
+                    | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
+  hr.a-hr-border
+  .m-lp-content
+    .container
+      .m-lp-content__inner
+        .m-lp-content__header
+          h2.m-lp-content__title
+            | 特徴
+        .m-lp-content__body
+          .m-lp-content__row
+            .m-numberd-item
+              .m-numberd-item__start
+                .m-numberd-item__number
+                  | 1
+              .m-numberd-item__end
+                .m-numberd-item__title
+                  | どんな小さな羽さえもそよどんな小さな羽さえもそよ
+                .m-numberd-item__description
+                  p
+                    | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
+          .m-lp-content__row
+            .m-numberd-item
+              .m-numberd-item__start
+                .m-numberd-item__number
+                  | 2
+              .m-numberd-item__end
+                .m-numberd-item__title
+                  | どんな小さな羽さえもそよどんな小さな羽さえもそよ
+                .m-numberd-item__description
+                  p
+                    | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
+          .m-lp-content__row
+            .m-numberd-item
+              .m-numberd-item__start
+                .m-numberd-item__number
+                  | 3
+              .m-numberd-item__end
+                .m-numberd-item__title
+                  | どんな小さな羽さえもそよどんな小さな羽さえもそよ
+                .m-numberd-item__description
+                  p
+                    | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望

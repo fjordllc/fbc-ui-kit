@@ -5,6 +5,8 @@
   a.m-articles-article
     &:hover
       border-color: $primary
+      box-shadow: rgba($primary, .2) 0 0 0 2px
+      +position(relative)
   .m-articles-article:first-child
     +border-radius(top, .25rem)
   .m-articles-article:last-child
@@ -13,3 +15,5 @@
     margin-top: -1px
   .m-article-attributes__list
     font-size: .875rem
+  .m-article-attributes
+    padding: .75rem 1rem

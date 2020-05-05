@@ -6,4 +6,11 @@ header.o-basic-header
           = link_to root_path, class: "a-brand-logo__link" do
            | FBC UI KIT
       .o-basic-header__end
-        = render "header_nav"
+        .m-inline-list
+          .m-inline-list__items
+            .m-inline-list__item
+              = link_to "", class: "a-button is-primary is-sm"
+                | 会員登録
+            .m-inline-list__item
+              = link_to "", class: "a-button is-border-primary is-sm"
+                | ログイン
