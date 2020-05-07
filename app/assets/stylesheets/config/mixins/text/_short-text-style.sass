@@ -4,33 +4,18 @@
   >*:last-child
     margin-bottom: 0
   p
-    +text-block(1em 1.6 0 1em)
+    +text-block(1em 1.5 0 .75em)
   +list
   ul,
   ol
     list-style-position: outside
     margin-left: 1.75em
-    margin-bottom: 1.5em
+    margin-bottom: 1em
   li
-    +text-block(1em 1.6 0 .125em)
+    +text-block(1em 1.5 0 .125em)
   a
     +link-text
     word-break: break-all
     +hover-link-reversal
     p &
       word-break: break-all
-  dl
-    line-height: 1.6
-    div
-      display: flex
-      &:not(:first-child)
-        margin-top: .25em
-  dt
-    flex-basis: 6em
-    margin-right: 1em
-    +position(relative)
-    &::after
-      content: ":"
-      +position(absolute, right 0, top -.0625em)
-  dd
-    flex: 100

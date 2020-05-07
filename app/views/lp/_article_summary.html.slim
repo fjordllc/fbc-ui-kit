@@ -2,25 +2,29 @@
   = link_to "", class: "m-articles-article" do
     .t-grids
       .t-grids__item.is-col-6
-        .m-articles-article__start
+        .m-articles-article__col
           = image_tag("https://via.placeholder.com/500", class: "m-articles-article__image a-rectangle-image")
       .t-grids__item.is-col-6
-        .m-articles-article__end
+        .m-articles-article__col
           .m-article-attributes
-            .m-article-attributes__start
-              h2.m-article-attributes__title
-                | どんな小さな羽さえもな羽さえもそよがぬ
-              .m-article-attributes__list
-                .m-inline-list
-                  .m-inline-list__items
-                    .m-inline-list__item
-                      date.m-article-attributes__date
-                        | 2020年12月24日
-                    .m-inline-list__item
-                      .m-article-attributes__author
-                        = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
-                        .m-article-attributes__author-name
-                          | machida
-              .m-article-attributes__summary
-                p
-                  | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
+            .m-article-attributes__col
+              .m-article-attributes__row
+                h2.m-article-attributes__title
+                  | どんな小さな羽さえもな羽さえもそよがぬ
+              .m-article-attributes__row
+                .m-article-attributes__list
+                  .m-inline-list
+                    .m-inline-list__items
+                      .m-inline-list__item
+                        date.m-article-attributes__date
+                          | 2020年12月24日
+                      .m-inline-list__item
+                        .m-article-attributes__author
+                          = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
+                          .m-article-attributes__author-name
+                            | machida
+              .m-article-attributes__row
+                .m-article-attributes__summary
+                  .a-short-text
+                    p
+                      | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望

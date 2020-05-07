@@ -23,6 +23,9 @@
                         | テキストインプット
                     .m-form-item__end
                       input.a-text-input.is-block(type="text")
+                      .a-form-help
+                        p
+                          | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
 
                 .m-basic-form__items
                   .m-form-item
@@ -38,11 +41,39 @@
                   .m-form-item
                     .m-form-item__start
                       label.a-form-label
-                        | テキストインプット
+                        | ラジオボタン選択
                     .m-form-item__end
-                      input.a-text-input.is-block(type="text")
+                      .m-check-list
+                        .m-check-list__items
+                          .m-check-list__item
+                            label.a-form-radio
+                              input(type="radio")
+                              span.a-form-radio__label
+                                | ラジオボタン
+                          .m-check-list__item
+                            label.a-form-radio
+                              input(type="radio")
+                              span.a-form-radio__label
+                                | ラジオボタン
+                          .m-check-list__item
+                            label.a-form-radio
+                              input(type="radio")
+                              span.a-form-radio__label
+                                | ラジオボタン
+                  .m-form-item
+                    .m-form-item__start
+                      label.a-form-label
+                        | ファイルアップロード
+                    .m-form-item__end
+                      label.a-file-input.a-button.is-sm.is-secondary
+                        input#js-upload-preview(type="file")
+                        span.a-file-input__label
+                          | ファイルアップロード
+                      #js-upload-preview__preview
 
                 .m-basic-form__actions
+                  .m-form-action
+                    input.a-button.is-primary.is-md.is-block(type="submit" value="あああああ")
                   .m-form-action
                     input.a-button.is-primary.is-md.is-block(type="submit" value="あああああ")
           footer.t-auth__footer

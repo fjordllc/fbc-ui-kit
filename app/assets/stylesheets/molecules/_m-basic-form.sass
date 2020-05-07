@@ -1,16 +1,18 @@
 .m-basic-form
   .m-form-item
     &:not(:last-child)
-      margin-bottom: 1.125em
+      margin-bottom: 1.5em
   .m-check-list
     margin-top: .25em
   .a-form-label
     margin-bottom: .25em
 
 .m-basic-form__items
-  margin-bottom: 1.25em
+  margin-bottom: 1.5em
 
 .m-basic-form__actions
-  +flex-grid(1em)
+  +flex-grid(1em, wrap, center)
   .m-form-action
     flex: 1
+    +media-breakpoint-up(md)
+      max-width: 20rem
