@@ -1,80 +1,83 @@
-    .t-auth
-      .container.is-md
-        .t-auth__inner
-          .t-auth__header
-            .a-brand-logo
-              = link_to root_path, class: "a-brand-logo__link" do
-                | FBC UI KIT
-            h1.t-auth__title
-              | 会員登録
-          .t-auth__body
-            .o-card
-              .m-basic-form
-                .m-basic-form__items
-                  .m-form-item
-                    .m-form-item__start
-                      label.a-form-label
-                        | テキストインプット
-                    .m-form-item__end
-                      input.a-text-input.is-block(type="text")
-                  .m-form-item
-                    .m-form-item__start
-                      label.a-form-label
-                        | テキストインプット
-                    .m-form-item__end
-                      input.a-text-input.is-block(type="text")
-                      .a-form-help
-                        p
-                          | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
+.t-auth
+  .container.is-md
+    .t-auth__inner
+      .t-auth__header
+        .a-brand-logo
+          = link_to root_path, class: "a-brand-logo__link" do
+            | FBC UI KIT
+        h1.t-auth__title
+          | 会員登録
+      .t-auth__body
+        .o-card
+          form.m-basic-form
+            .m-basic-form__items
+              .m-form-item
+                .m-form-item__start
+                  label.a-form-label
+                    | テキストインプット
+                .m-form-item__end
+                  input.a-text-input.is-block(type="text")
+              .m-form-item
+                .m-form-item__start
+                  label.a-form-label
+                    | テキストインプット
+                .m-form-item__end
+                  input.a-text-input.is-block(type="text")
+                  .a-form-help
+                    p
+                      | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
 
-                .m-basic-form__items
-                  .m-form-item
-                    .m-form-item__start
-                      label.a-form-label
-                        | テキストインプット
-                    .m-form-item__end
-                      input.a-text-input.is-block(type="text")
-                      .a-form-help
-                        p
-                          = link_to "", class: "" do
-                            | パスワードを忘れた
-                  .m-form-item
-                    .m-form-item__start
-                      label.a-form-label
-                        | ラジオボタン選択
-                    .m-form-item__end
-                      .m-check-list
-                        .m-check-list__items
-                          .m-check-list__item
-                            label.a-form-radio
-                              input(type="radio")
-                              span.a-form-radio__label
-                                | ラジオボタン
-                          .m-check-list__item
-                            label.a-form-radio
-                              input(type="radio")
-                              span.a-form-radio__label
-                                | ラジオボタン
-                          .m-check-list__item
-                            label.a-form-radio
-                              input(type="radio")
-                              span.a-form-radio__label
-                                | ラジオボタン
-                  .m-form-item
-                    .m-form-item__start
-                      label.a-form-label
+            .m-basic-form__items
+              .m-form-item
+                .m-form-item__start
+                  label.a-form-label
+                    | テキストインプット
+                .m-form-item__end
+                  input.a-text-input.is-block(type="text")
+                  .a-form-help
+                    p
+                      = link_to "", class: "" do
+                        | パスワードを忘れた
+              .m-form-item
+                .m-form-item__start
+                  label.a-form-label
+                    | ラジオボタン選択
+                .m-form-item__end
+                  .m-check-list
+                    .m-check-list__items
+                      .m-check-list__item
+                        label.a-form-radio
+                          input(type="radio")
+                          span.a-form-radio__label
+                            | ラジオボタン
+                      .m-check-list__item
+                        label.a-form-radio
+                          input(type="radio")
+                          span.a-form-radio__label
+                            | ラジオボタン
+                      .m-check-list__item
+                        label.a-form-radio
+                          input(type="radio")
+                          span.a-form-radio__label
+                            | ラジオボタン
+              .m-form-item
+                .m-form-item__start
+                  label.a-form-label
+                    | ファイルアップロード
+                .m-form-item__end
+                  label.m-file-upload.js-upload-preview
+                    .m-file-upload__preview.js-upload-preview__preview
+                      .m-file-upload__preview-message
+                        | プレビュー
+                    .a-file-input.a-button.is-sm.is-border-secondary
+                      input.js-upload-preview__upload(type="file")
+                      span.a-file-input__label
                         | ファイルアップロード
-                    .m-form-item__end
-                      label.a-file-input.a-button.is-sm.is-secondary
-                        input#js-upload-preview(type="file")
-                        span.a-file-input__label
-                          | ファイルアップロード
-                      #js-upload-preview__preview
 
-                .m-basic-form__actions
-                  .m-form-action
-                    input.a-button.is-primary.is-md.is-block(type="submit" value="あああああ")
-                  .m-form-action
-                    input.a-button.is-primary.is-md.is-block(type="submit" value="あああああ")
-          footer.t-auth__footer
-            = render "/auth/auth_nav"
+            .m-basic-form__actions
+              .m-form-action
+                input.a-button.is-primary.is-md.is-block(type="submit" value="あああああ")
+              .m-form-action
+                input.a-button.is-primary.is-md.is-block(type="submit" value="あああああ")
+      footer.t-auth__footer
+        = render "/auth/auth_nav"

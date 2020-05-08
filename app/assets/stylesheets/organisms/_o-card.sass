@@ -6,15 +6,21 @@
     padding: 1rem 1.25rem
   .a-form-help
     +text-block(.875rem 1.45 .5em)
-
   .a-link-block
     +padding(horizontal, 1.25rem)
   .m-horizontal-buttons
     padding: .5rem 1rem
-
   .m-style-block
     margin-bottom: 1.25rem
 
+a.o-card
+  +block-link
+  color: inherit
+  transition: all .2s ease-out
+  &:hover
+    border-color: $primary
+    box-shadow: rgba($primary, .2) 0 0 0 2px
+    +position(relative)
 
 .o-card__header
   padding: .875rem 1.25rem
@@ -25,3 +31,5 @@
 .o-card__blocks
   +padding(vertical, 1.25rem)
   margin-bottom: -1.25rem
+  &:first-child:last-child
+    margin-bottom: 0
