@@ -1,5 +1,5 @@
 doctype html
 html
   = render("head")
-  body.is-application.is-t-auth(class="is-#{params[:id]}")
+  body.is-auth.is-t-auth(class="is-#{params[:id]} #{body_class}")
     = yield

@@ -1,7 +1,7 @@
 doctype html
 html
   = render("head")
-  body.is-articles(class="is-#{params[:id]}")
+  body.is-articles(class="is-#{params[:id]} #{body_class}")
     .t-fixed-left-nav
       .t-fixed-left-nav__start
         = render "o_basic_header"

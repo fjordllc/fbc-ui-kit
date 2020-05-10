@@ -8,40 +8,6 @@
             h1.t-auth__title
               | ログイン
           .t-auth__body
-            .o-card
-              .m-basic-form
-                .m-basic-form__items
-                  .m-form-item
-                    .m-form-item__start
-                      label.a-form-label
-                        | テキストインプット
-                    .m-form-item__end
-                      input.a-text-input.is-block(type="text")
-                      .a-form-help
-                        p
-                          = link_to "", class: "" do
-                            | パスワードを忘れた
-                  .m-form-item
-                    .m-form-item__start
-                      label.a-form-label
-                        | テキストインプット
-                    .m-form-item__end
-                      input.a-text-input.is-block(type="text")
-                  .m-form-item
-                    .m-form-item__start
-                      label.a-form-checkbox
-                        input.a-form-checkbox__input(type="checkbox")
-                        span.a-form-checkbox__label
-                          | ログイン情報を保存
-
-                .m-basic-form__actions
-                  .m-form-action
-                    input.a-button.is-primary.is-md.is-block(type="submit" value="あああああ")
-                .m-basic-form__nav
-                  .m-list
-                    .m-list__items
-                      .m-list__item.is-ta-center
-                        = link_to "/signup", class: "a-text-link" do
-                          | 入会の申込はこちら
+            = render "/auth/login_form"
           footer.t-auth__footer
             = render "/auth/auth_nav"
