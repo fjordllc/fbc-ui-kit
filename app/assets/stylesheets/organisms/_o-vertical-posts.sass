@@ -1,22 +1,22 @@
-.o-vertical-articles
-  .m-article-attributes__col
+.o-vertical-posts
+  .m-post-attributes__col
     &:not(:first-child)
       margin-left: 1em
-  .m-articles-article
+  .m-posts-post
     font-size: 1.125rem
     border: solid 1px $border
-  a.m-articles-article
+  a.m-posts-post
     &:hover
       border-color: $primary
       box-shadow: rgba($primary, .2) 0 0 0 2px
       +position(relative)
-  .m-articles-article:first-child
+  .m-posts-post:first-child
     +border-radius(top, .25rem)
-  .m-articles-article:last-child
+  .m-posts-post:last-child
     +border-radius(bottom, .25rem)
-  .m-articles-article:not(:first-child)
+  .m-posts-post:not(:first-child)
     margin-top: -1px
-  .m-article-attributes__list
+  .m-post-attributes__list
     font-size: .875rem
-  .m-article-attributes
+  .m-post-attributes
     padding: .75rem 1rem

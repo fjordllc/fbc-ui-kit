@@ -5,6 +5,8 @@ $grid-columns-count: 12
   display: grid
   grid-template-columns: repeat(#{$grid-columns-count}, 1fr)
   grid-gap: $grid-gap
+  .t-grids + &
+    margin-top: calc(#{$grid-gap} * 1.5)
 
 .t-grids__item
   height: 100%

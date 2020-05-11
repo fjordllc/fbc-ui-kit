@@ -1,4 +1,5 @@
 .o-card
+  background-color: $base
   border: solid 1px $border
   border-radius: .25rem
   height: 100%
@@ -8,10 +9,12 @@
     +text-block(.875rem 1.45 .5em)
   .a-link-block
     +padding(horizontal, 1.25rem)
-  .m-horizontal-buttons
-    padding: .5rem 1rem
   .m-style-block
     margin-bottom: 1.25rem
+  .m-basic-form__nav
+    margin-top: 1.25rem
+  .a-basic-table
+    font-size: .875rem
 
 a.o-card
   +block-link
@@ -24,12 +27,25 @@ a.o-card
 
 .o-card__header
   padding: .875rem 1.25rem
+  display: flex
+  align-items: center
+  justify-content: space-between
 
 .o-card__title
   +text-block(1.25rem 1.4, 600)
+
+.o-card__body
+  &>.a-basic-table
+    width: calc(100% + 2px)
+    +margin(horizontal, -1px)
+    margin-bottom: -1px
 
 .o-card__blocks
   +padding(vertical, 1.25rem)
   margin-bottom: -1.25rem
   &:first-child:last-child
     margin-bottom: 0
+
+.o-card__footer
+  .m-horizontal-buttons
+    padding: .5rem 1rem
