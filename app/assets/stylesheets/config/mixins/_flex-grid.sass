@@ -2,5 +2,10 @@
   display: flex
   +margin(horizontal, calc(#{$gutter} / -2))
   justify-content: $justify-content
+  flex-wrap: $flex-wrap
+  @if $flex-wrap == wrap
+    margin-bottom: calc(#{$gutter} * -1)
   >*
     +padding(horizontal, calc(#{$gutter} / 2))
+    @if $flex-wrap == wrap
+      margin-bottom: $gutter

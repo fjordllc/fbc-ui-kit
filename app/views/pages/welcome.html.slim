@@ -1,80 +1,47 @@
-.o-basic-main-visual
-  .container
-    .o-basic-main-visual__inner
-      | あああああああ
+= render "/lp/welcome/main_visual"
 .t-lp__contents
+  = render "/lp/welcome/articles"
+  hr.a-hr-border
+  = render "/lp/welcome/lerning_procedure"
+  hr.a-hr-border
+  = render "/lp/welcome/features"
+  hr.a-hr-border
+  = render "/lp/welcome/mentors"
+  hr.a-hr-border
+  = render "/lp/welcome/practices"
+  hr.a-hr-border
+  = render "/lp/welcome/price"
+  hr.a-hr-border
+  = render "/lp/welcome/employed_companies"
+  hr.a-hr-border
   .m-lp-content
     .container
       .m-lp-content__inner
         .m-lp-content__header
           h2.m-lp-content__title
-            | お知らせ
+            | 企業研修代行
+          h3.m-lp-content__sub-title
+            | 卒業生が就職した企業の一部を紹介
         .m-lp-content__body
           .m-lp-content__row
             .t-grids
-              .t-grids__item.is-col-8
-                = render "/lp/article_summary"
-              .t-grids__item.is-col-4
-                = render "/lp/vertical_articles"
-          .m-lp-content__row
-            = render "/lp/featured_articles"
+              .t-grids__item.is-col-6
+                | ああああああ
+              .t-grids__item.is-col-6
+                | ああああああ
+  hr.a-hr-border
+  .m-lp-content
+    .container
+      .m-lp-content__inner
+        .m-lp-content__header
+          h2.m-lp-content__title
+            | 卒業生の声
+          h3.m-lp-content__sub-title
+            | 卒業生が就職した企業の一部を紹介
+        .m-lp-content__body
           .m-lp-content__row
             .t-grids
-              .t-grids__item.is-col-12
-                = render "/lp/article_summary"
-  hr.a-hr-border
-  .m-lp-content
-    .container
-      .m-lp-content__inner
-        .m-lp-content__header
-          h2.m-lp-content__title
-            | 学習の流れ
-        .m-lp-content__body
-          = render "/lp/lerning_procedure"
-  hr.a-hr-border
-  .m-lp-content
-    .container
-      .m-lp-content__inner
-        .m-lp-content__header
-          h2.m-lp-content__title
-            | 特徴
-        .m-lp-content__body
-          = render "/lp/features"
-  hr.a-hr-border
-  .m-lp-content
-    .container
-      .m-lp-content__inner
-        .m-lp-content__header
-          h2.m-lp-content__title
-            | メンター
-        .m-lp-content__body
-          = render "/lp/mentors"
-  hr.a-hr-border
-  .m-lp-content
-    .container
-      .m-lp-content__inner
-        .m-lp-content__header
-          h2.m-lp-content__title
-            | 学習内容
-        .m-lp-content__body
-          = render "/lp/practices"
-  hr.a-hr-border
-  .m-lp-content
-    .container
-      .m-lp-content__inner
-        .m-lp-content__header
-          h2.m-lp-content__title
-            | 利用料金
-        .m-lp-content__body
-          .m-lp-content__row
-            .container
-              .o-lp-price
-                .m-lg-price
-                  .m-lg-price__time
-                    | 月額
-                  .m-lg-price__unit
-                    i.fas.fa-yen-sign
-                  .m-lg-price__number
-                    | 29<span>,</span>800
-                  .m-lg-price__tax
-                    | 税込
+              .t-grids__item.is-col-6
+                | ああああああ
+              .t-grids__item.is-col-6
+                | ああああああ

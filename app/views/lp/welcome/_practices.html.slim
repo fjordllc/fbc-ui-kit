@@ -1,0 +1,14 @@
+.m-lp-content
+  .container
+    .m-lp-content__inner
+      .m-lp-content__header
+        h2.m-lp-content__title
+          | 学習内容
+      .m-lp-content__body
+        = render "/lp/practices"
+        .m-lp-content__row
+          .m-horizontal-buttons
+            .m-horizontal-buttons__items
+              .m-horizontal-buttons__item
+                = link_to static_page_path(:practices), class: "a-button is-lg is-primary is-block" do
+                  | あああああああ
