@@ -4,8 +4,18 @@
       = link_to root_path, class: "a-text-link" do
         | トップページ
     li.m-centered-inline-list__item
-      = link_to "/tos", class: "a-text-link" do
+      label.a-text-link(for="modal-tos")
         | 利用規約
     li.m-centered-inline-list__item
-      = link_to "/pp", class: "a-text-link" do
+      label.a-text-link(for="modal-pp")
         | プライバシーポリシー
+
+= render "shared/modal", id: "modal-tos", title: "利用規約" do
+  .o-card__text
+    .a-long-text
+      = render "tos_body"
+
+= render "shared/modal", id: "modal-pp", title: "プライバシーポリシー" do
+  .o-card__text
+    .a-long-text
+      = render "pp_body"

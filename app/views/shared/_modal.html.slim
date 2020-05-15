@@ -1,0 +1,18 @@
+input.a-hidden-checkbox(type="checkbox" id="#{id}")
+.o-modal
+  label.o-modal__overlay(for="#{id}")
+  .o-modal__content
+    .container.is-md
+      .o-card
+        - if defined?(title)
+          .o-card__header
+            h2.o-card__title
+              = title
+          hr.a-hr-border
+        .o-card__body
+          = yield
+  label.o-modal__close(for="#{id}")
+    .o-modal__close-icon
+      i.fbc-icon-clear
+    .o-modal__close-label
+      | 閉じる
