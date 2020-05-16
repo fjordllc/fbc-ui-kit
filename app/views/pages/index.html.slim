@@ -40,3 +40,11 @@
           .m-inline-list__item
             = link_to static_page_path("new_password"), class: "a-link-text" do
               | パスワード再発行
+    .m-inline-lists__row
+      .m-inline-list
+        h2.m-inline-list__title
+          | Application
+        .m-inline-list__items
+          .m-inline-list__item
+            = link_to static_page_path("users"), class: "a-link-text" do
+              | ユーザー一覧

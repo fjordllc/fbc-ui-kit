@@ -4,23 +4,25 @@
 - content_for(:page_header, "フォームのパーツ集")
 - content_for(:horizontal_filter, true)
 
-.t-fixed-left-nav__body-start
-  = render "o_pill_tabs"
-.t-fixed-left-nav__body-end
-  .t-fixed-left-nav__contents
-    .t-fixed-left-nav__content
-      .t-fixed-left-nav__content-header
-        h2.t-fixed-left-nav__content-title
-          | ダッシュボード
-      .t-fixed-left-nav__content-body
-        .t-grids
-          .t-grids__item.is-col-4.is-row-2
-            = render "basic_form"
-          .t-grids__item.is-col-8
-            = render "basic_form_2"
-          .t-grids__item.is-col-8
-            = render "o_basic_table"
-          .t-grids__item.is-col-3
-            = render "card_nav"
-          .t-grids__item.is-col-5
-            = render "users_user"
+.t-fixed-left-nav__body
+  .container.is-mxw-100pc
+    .t-fixed-left-nav__body-start
+      = render "o_pill_tabs"
+    .t-fixed-left-nav__body-end
+      .t-fixed-left-nav__contents
+        .t-fixed-left-nav__content
+          .t-fixed-left-nav__content-header
+            h2.t-fixed-left-nav__content-title
+              | ダッシュボード
+          .t-fixed-left-nav__content-body
+            .t-grids
+              .t-grids__item.is-col-4.is-row-2
+                = render "basic_form"
+              .t-grids__item.is-col-8
+                = render "basic_form_2"
+              .t-grids__item.is-col-8
+                = render "o_basic_table"
+              .t-grids__item.is-col-3
+                = render "card_nav"
+              .t-grids__item.is-col-5
+                = render "users_user"

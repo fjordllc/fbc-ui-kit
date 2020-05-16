@@ -20,8 +20,6 @@ html
           = render "horizontal_filter"
         - if params[:id].include?("atoms/")
           = render "atoms_tabs", active: 1
-        .t-fixed-left-nav__body
-          .container.is-mxw-100pc
-            = yield
+        = yield
       .t-fixed-left-nav__end
         = render "o_icon_blocks"
