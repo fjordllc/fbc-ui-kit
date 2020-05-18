@@ -5,12 +5,31 @@ header.o-basic-header
         h1.a-brand-logo
           = link_to root_path, class: "a-brand-logo__link" do
            | FBC UI KIT
+        .o-basic-header__page-links
+          .m-inline-list
+            .m-inline-list__items
+              .m-inline-list__item
+                = link_to static_page_path("articles"), class: "a-pill-link"
+                  | お知らせ
+              .m-inline-list__item
+                = link_to "", class: "a-pill-link"
+                  | 企業研修代行
+              .m-inline-list__item
+                = link_to "", class: "a-pill-link"
+                  | カリキュラム一覧
+              .m-inline-list__item
+                = link_to static_page_path("faq"), class: "a-pill-link"
+                  | よくある質問と答え
+              .m-inline-list__item
+                = link_to "", class: "a-pill-link"
+                  | 企業様へ
       .o-basic-header__end
-        .m-inline-list
-          .m-inline-list__items
-            .m-inline-list__item
-              = link_to "", class: "a-button is-primary is-sm"
-                | 利用開始
-            .m-inline-list__item
-              = link_to "", class: "a-button is-border-primary is-sm"
-                | ログイン
+        .o-basic-header__auth-links
+          .m-inline-list
+            .m-inline-list__items
+              .m-inline-list__item
+                = link_to "", class: "a-button is-primary is-sm"
+                  | 利用開始
+              .m-inline-list__item
+                = link_to "", class: "a-button is-border-primary is-sm"
+                  | ログイン

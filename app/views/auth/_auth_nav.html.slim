@@ -1,13 +1,13 @@
 .m-centered-inline-list
   ul.m-centered-inline-list__items
     li.m-centered-inline-list__item
-      = link_to root_path, class: "a-text-link" do
+      = link_to root_path, class: "a-text-link is-hover-link" do
         | トップページ
     li.m-centered-inline-list__item
-      label.a-text-link(for="modal-tos")
+      label.a-text-link.is-hover-link(for="modal-tos")
         | 利用規約
     li.m-centered-inline-list__item
-      label.a-text-link(for="modal-pp")
+      label.a-text-link.is-hover-link(for="modal-pp")
         | プライバシーポリシー
 
 = render "shared/modal", id: "modal-tos", title: "利用規約" do

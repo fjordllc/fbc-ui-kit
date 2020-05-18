@@ -1,7 +1,20 @@
-- content_for(:page_header, "Atoms")
 - sizes = %w[xs sm md lg xl]
 - ui_colors = %w[secondary primary info success warning danger disabled]
 
+= render "page_header", title: "Atoms" do
+  .m-horizontal-buttons
+    .m-horizontal-buttons__items
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-primary is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-warning is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-danger is-md" do
+          | ああああああ
+
+= render "atoms_tabs"
 .t-fixed-left-nav__body
   .container.is-mxw-100pc
     .t-grids

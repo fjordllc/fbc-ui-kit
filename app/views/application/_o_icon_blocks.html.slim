@@ -1,40 +1,41 @@
-nav.o-vertical-icon-blocks
-  ul.o-vertical-icon-blocks__items
-    li.o-vertical-icon-blocks__item
-      = link_to root_path, class: "a-icon-square" do
-        .a-icon-square__icon
-          i.fas.fa-home
-        .a-icon-square__label
-          | ホーム
-    li.o-vertical-icon-blocks__item
-      = link_to static_page_path("atoms/button"), class: "a-icon-square" do
-        .a-icon-square__icon
-          i.fas.fa-shapes
-        .a-icon-square__label
-          | Atoms
-    li.o-vertical-icon-blocks__item
-      = link_to static_page_path("login"), class: "a-icon-square" do
-        .a-icon-square__icon
-          i.fas.fa-edit
-        .a-icon-square__label
-          | Form
-    li.o-vertical-icon-blocks__item
-      = link_to static_page_path("login"), class: "a-icon-square" do
-        .a-icon-square__icon
-          i.fas.fa-sign-in-alt
-        .a-icon-square__label
-          | ログイン
-    li.o-vertical-icon-blocks__item
-      = link_to static_page_path("welcome"), class: "a-icon-square" do
-        .a-icon-square__icon
-          i.fas.fa-landmark
-        .a-icon-square__label
-          | LP
-    li.o-vertical-icon-blocks__item
-      = link_to "", class: "a-icon-square" do
-        .a-icon-square__icon
-          i.fas.fa-home
-        .a-icon-square__label
-          | ホーム
-        .a-count-badge
-          | 12
+nav.o-application-global-nav
+  .m-vertical-icon-blocks
+    ul.m-vertical-icon-blocks__items
+      li.m-vertical-icon-blocks__item
+        = link_to root_path, class: "a-icon-square" do
+          .a-icon-square__icon
+            i.fas.fa-home
+          .a-icon-square__label
+            | ホーム
+      li.m-vertical-icon-blocks__item
+        = link_to static_page_path("atoms/button"), class: "a-icon-square" do
+          .a-icon-square__icon
+            i.fas.fa-shapes
+          .a-icon-square__label
+            | Atoms
+      li.m-vertical-icon-blocks__item
+        = link_to static_page_path("login"), class: "a-icon-square" do
+          .a-icon-square__icon
+            i.fas.fa-edit
+          .a-icon-square__label
+            | Form
+      li.m-vertical-icon-blocks__item
+        = link_to static_page_path("login"), class: "a-icon-square" do
+          .a-icon-square__icon
+            i.fas.fa-sign-in-alt
+          .a-icon-square__label
+            | Auth
+      li.m-vertical-icon-blocks__item
+        = link_to static_page_path("welcome"), class: "a-icon-square" do
+          .a-icon-square__icon
+            i.fas.fa-landmark
+          .a-icon-square__label
+            | LP
+      li.m-vertical-icon-blocks__item
+        = link_to "", class: "a-icon-square" do
+          .a-icon-square__icon
+            i.fas.fa-home
+          .a-icon-square__label
+            | ホーム
+          .a-count-badge
+            | 12

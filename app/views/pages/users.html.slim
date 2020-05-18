@@ -1,4 +1,17 @@
-- content_for(:page_header, "ユーザー一覧")
+= render "page_header", title: "ユーザー一覧" do
+  .m-horizontal-buttons
+    .m-horizontal-buttons__items
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-primary is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-warning is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-danger is-md" do
+          | ああああああ
+
+= render "users_tabs"
 
 .t-fixed-left-nav__body
   .container.is-mxw-100pc
@@ -13,7 +26,8 @@
                     .m-post-attributes__col
                       .m-post-attributes__row
                         .m-post-attributes__image
-                          = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
+                          = link_to "", class: "a-image-link" do
+                            = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
                     .m-post-attributes__col
                       .m-post-attributes__row
                         h2.m-post-attributes__title

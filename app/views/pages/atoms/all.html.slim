@@ -1,9 +1,23 @@
-- content_for(:flash_alert, true)
-- content_for(:flash_notice, true)
-- content_for(:breadcrumbs, true)
-- content_for(:page_header, "フォームのパーツ集")
-- content_for(:horizontal_filter, true)
+= render "o_basic_breadcrumbs"
+hr.a-hr-border
+= render "page_header", title: "フォームのパーツ集" do
+  .m-horizontal-buttons
+    .m-horizontal-buttons__items
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-primary is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-warning is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-danger is-md" do
+          | ああああああ
 
+= render "flash_alert"
+= render "flash_notice"
+hr.a-hr-border
+= render "horizontal_filter"
+= render "atoms_tabs"
 .t-fixed-left-nav__body
   .container.is-mxw-100pc
     .t-fixed-left-nav__body-start

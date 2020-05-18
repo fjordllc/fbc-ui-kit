@@ -5,14 +5,4 @@
         .o-basic-page-header__title
           = title
       .o-basic-page-header__end
-        .m-horizontal-buttons
-          .m-horizontal-buttons__items
-            .m-horizontal-buttons__item
-              = link_to "", class: "a-button is-primary is-md" do
-                | ああああああ
-            .m-horizontal-buttons__item
-              = link_to "", class: "a-button is-warning is-md" do
-                | ああああああ
-            .m-horizontal-buttons__item
-              = link_to "", class: "a-button is-danger is-md" do
-                | ああああああ
+        = yield
