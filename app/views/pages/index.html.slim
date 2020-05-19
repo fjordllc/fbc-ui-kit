@@ -31,6 +31,9 @@
               .m-inline-list__item
                 = link_to static_page_path("faq"), class: "a-link-text" do
                   | よくある質問と答え
+              .m-inline-list__item
+                = link_to static_page_path("contact"), class: "a-link-text" do
+                  | お問い合わせ
 
         .m-inline-lists__row
           .m-inline-list
@@ -54,3 +57,9 @@
               .m-inline-list__item
                 = link_to static_page_path("users"), class: "a-link-text" do
                   | ユーザー一覧
+              .m-inline-list__item
+                = link_to static_page_path("user"), class: "a-link-text" do
+                  | ユーザー個別
+              .m-inline-list__item
+                = link_to static_page_path("edit_user"), class: "a-link-text" do
+                  | ユーザー編集
