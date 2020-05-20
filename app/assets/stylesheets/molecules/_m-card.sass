@@ -1,4 +1,4 @@
-.o-card
+.m-card
   background-color: $base
   border: solid 1px $border
   border-radius: .25rem
@@ -10,7 +10,7 @@
   .a-basic-table
     font-size: .875rem
 
-a.o-card
+a.m-card
   +block-link
   color: inherit
   transition: all .2s ease-out
@@ -19,16 +19,16 @@ a.o-card
     box-shadow: rgba($primary, .2) 0 0 0 2px
     +position(relative)
 
-.o-card__header
+.m-card__header
   padding: .875rem 1.25rem
   display: flex
   align-items: center
   justify-content: space-between
 
-.o-card__title
+.m-card__title
   +text-block(1.25rem 1.4, 600)
 
-.o-card__body
+.m-card__body
   &>.a-basic-table
     width: calc(100% + 2px)
     +margin(horizontal, -1px)
@@ -40,15 +40,15 @@ a.o-card
   .m-basic-form
     padding: 1em 1.5em
 
-.o-card__text
+.m-card__text
   padding: 1em 1.5em
 
-.o-card__blocks
+.m-card__blocks
   +padding(vertical, 1.25rem)
   margin-bottom: -1.25rem
   &:first-child:last-child
     margin-bottom: 0
 
-.o-card__footer
+.m-card__footer
   .m-horizontal-buttons
     padding: .5rem 1rem

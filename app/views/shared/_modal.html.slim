@@ -3,13 +3,13 @@ input.a-hidden-checkbox(type="checkbox" id="#{id}")
   label.o-modal__overlay(for="#{id}")
   .o-modal__content
     .container.is-md
-      .o-card
+      .m-card
         - if defined?(title)
-          .o-card__header
-            h2.o-card__title
+          .m-card__header
+            h2.m-card__title
               = title
           hr.a-hr-border
-        .o-card__body
+        .m-card__body
           = yield
   label.o-modal__close(for="#{id}")
     .o-modal__close-icon

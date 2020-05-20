@@ -1,0 +1,19 @@
+$s: 1em
+@for $i from 1 through 13
+  .scale-#{$i}
+    font-size: $s
+  $s: $s * 1.05946309
+
+$s2: 1em
+@for $i from 1 through 13
+  .scale--#{$i}
+    font-size: $s2
+  $s2: $s2 / 1.05946309
+
+///////////
+
+$base-size: 1rem
+
+@for $i from 1 through 10
+  .u-fs-#{11 - $i}
+    font-size: $base-size * 8 / $i

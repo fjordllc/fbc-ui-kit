@@ -1,4 +1,4 @@
-= render "page_header", title: "Atoms" do
+= render "page_header", title: "Utilities" do
   .m-horizontal-buttons
     .m-horizontal-buttons__items
       .m-horizontal-buttons__item
@@ -11,11 +11,20 @@
         = link_to "", class: "a-button is-danger is-md" do
           | ああああああ
 
-= render "atoms_tabs"
+= render "utilities_tabs"
+
 .t-fixed-left-nav__body
   .container.is-mxw-100pc
     .t-grids
-      .t-grids__item.u-col-4
-        = render "/pages/atoms/a_form_select"
-      .t-grids__item.u-col-4
-        = render "/pages/atoms/a_form_select_is_block"
+      .t-grids__item.u-col-6
+        .m-card
+          .m-card__header
+            h2.m-card__title
+              | FontSize
+          hr.a-hr-border
+          .m-card__body
+            .container
+              .m-card__blocks
+                - for i in 1..10 do
+                  div(class="u-fs-#{i}")
+                    | それは黄金の昼下がり気ままにただようぼくら

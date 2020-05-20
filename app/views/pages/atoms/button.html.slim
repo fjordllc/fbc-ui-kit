@@ -19,15 +19,15 @@
   .container.is-mxw-100pc
     .t-grids
       - sizes.each do |size|
-        .t-grids__item.is-col-6
-          .o-card
-            .o-card__header
-              h3.o-card__title
+        .t-grids__item.u-col-6
+          .m-card
+            .m-card__header
+              h3.m-card__title
                 | Size #{size}
             hr.a-hr-border
-            .o-card__body
+            .m-card__body
               .container
-                .o-card__blocks
+                .m-card__blocks
                   - ui_colors.each do |color|
                     .row
                       .col-xs-6.col-lg-4
