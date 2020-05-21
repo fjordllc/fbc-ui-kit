@@ -1,0 +1,28 @@
+$base-size: 1rem
+$size-count: 10
+
+@for $i from 1 through $size-count
+  $size: ($size-count + 1) - $i
+  .u-fs-#{$size}
+    font-size: $base-size * 8 / $i
+
+@each $breakpoint in map-keys($grid-breakpoints)
+  +media-breakpoint-only(#{$breakpoint})
+    @for $i from 1 through $size-count
+      $size: ($size-count + 1) - $i
+      .#{$breakpoint}\:u-fs-#{$size}
+        font-size: $base-size * 8 / $i
+
+@each $breakpoint in map-keys($grid-breakpoints)
+  +media-breakpoint-down(#{$breakpoint})
+    @for $i from 1 through $size-count
+      $size: ($size-count + 1) - $i
+      .#{$breakpoint}-down\:u-fs-#{$size}
+        font-size: $base-size * 8 / $i
+
+@each $breakpoint in map-keys($grid-breakpoints)
+  +media-breakpoint-up(#{$breakpoint})
+    @for $i from 1 through $size-count
+      $size: ($size-count + 1) - $i
+      .#{$breakpoint}-up\:u-fs-#{$size}
+        font-size: $base-size * 8 / $i
