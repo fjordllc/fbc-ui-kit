@@ -2,5 +2,8 @@
   .container.is-mxw-100pc
     .o-basic-tabs__items
       .o-basic-tabs__item
-        = link_to "/atoms/button", class: "o-basic-tabs__item-link #{current?("utilities/typography") ? "is-active" : ""}" do
+        = link_to "/utilities/typography", class: "o-basic-tabs__item-link #{current?("utilities/typography") ? "is-active" : ""}" do
           | Typography
+      .o-basic-tabs__item
+        = link_to "/utilities/margin_padding", class: "o-basic-tabs__item-link #{current?("utilities/margin_padding") ? "is-active" : ""}" do
+          | Margin & Padding

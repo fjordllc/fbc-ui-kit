@@ -15,10 +15,10 @@ $max-weight: 900
   +media-breakpoint-down(#{$breakpoint})
     @for $i from ($min-weight / 100) through ($max-weight / 100)
       .#{$breakpoint}-down\:u-fw-#{$i * 100}
-        font-size: $base-size * 8 / $i
+        font-weight: $i * 100
 
 @each $breakpoint in map-keys($grid-breakpoints)
   +media-breakpoint-up(#{$breakpoint})
     @for $i from ($min-weight / 100) through ($max-weight / 100)
       .#{$breakpoint}-up\:u-fw-#{$i * 100}
-        font-size: $base-size * 8 / $i
+        font-weight: $i * 100

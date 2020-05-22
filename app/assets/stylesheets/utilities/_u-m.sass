@@ -1,0 +1,36 @@
+$base-size: .25rem
+$size-count: 20
+
+=generate-margin($breakpoint-scope: false, $base-size: $base-size, $size-count: $size-count)
+  @for $i from 1 through $size-count
+    @if $breakpoint-scope == false
+      .u-m-#{strip_unit($i * $base-size * 16)}
+        margin: $i * $base-size
+      .u-mt-#{strip_unit($i * $base-size * 16)}
+        margin-top: $i * $base-size
+      .u-mr-#{strip_unit($i * $base-size * 16)}
+        margin-right: $i * $base-size
+      .u-mb-#{strip_unit($i * $base-size * 16)}
+        margin-bottom: $i * $base-size
+      .u-ml-#{strip_unit($i * $base-size * 16)}
+        margin-left: $i * $base-size
+    @else
+      .#{$breakpoint-scope}\:u-m-#{strip_unit($i * $base-size * 16)}
+        margin: $i * $base-size
+      .#{$breakpoint-scope}\:u-mt-#{strip_unit($i * $base-size * 16)}
+        margin-top: $i * $base-size
+      .#{$breakpoint-scope}\:u-mr-#{strip_unit($i * $base-size * 16)}
+        margin-right: $i * $base-size
+      .#{$breakpoint-scope}\:u-mb#{strip_unit($i * $base-size * 16)}
+        margin-bottom: $i * $base-size
+      .#{$breakpoint-scope}\:u-ml#{strip_unit($i * $base-size * 16)}
+        margin-left: $i * $base-size
+
++generate-margin(false)
+@each $breakpoint in map-keys($grid-breakpoints)
+  +media-breakpoint-only(#{$breakpoint})
+    +generate-margin($breakpoint)
+  +media-breakpoint-down(#{$breakpoint})
+    +generate-margin($breakpoint + "-down")
+  +media-breakpoint-up(#{$breakpoint})
+    +generate-margin($breakpoint + "-up")
