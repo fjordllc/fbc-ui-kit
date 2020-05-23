@@ -1,0 +1,27 @@
+= render "page_header", title: "Utilities" do
+  .m-horizontal-buttons
+    .m-horizontal-buttons__items
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-primary is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-warning is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-danger is-md" do
+          | ああああああ
+
+= render "utilities_tabs"
+
+.t-fixed-left-nav__body
+  .container.is-mxw-100pc
+    .t-grids
+      - ["main", "primary", "secondary", "warning", "danger", "success", "info", "border", "base", "disabled", "default-text"].each do |color|
+        .t-grids__item.u-col-4
+          div.swatches
+            div.swatch-title(class = "#{color}-500")
+              h3 #{color}
+            span.color-swatch(class = "#{color}-50") 50
+            - (1..9).each do |i|
+              span.color-swatch(class = "#{color}-#{i * 100}")
+                | #{i * 100}

@@ -7,3 +7,9 @@
       .o-basic-tabs__item
         = link_to "/utilities/margin_padding", class: "o-basic-tabs__item-link #{current?("utilities/margin_padding") ? "is-active" : ""}" do
           | Margin & Padding
+      .o-basic-tabs__item
+        = link_to "/utilities/color", class: "o-basic-tabs__item-link #{current?("utilities/color") ? "is-active" : ""}" do
+          | Color
+      .o-basic-tabs__item
+        = link_to "/utilities/width_height", class: "o-basic-tabs__item-link #{current?("utilities/width_height") ? "is-active" : ""}" do
+          | Width & Height

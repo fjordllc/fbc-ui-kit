@@ -1,29 +1,30 @@
 $base-size: .25rem
 $size-count: 20
+$rem: strip_unit($rem)
 
 =generate-margin($breakpoint-scope: false, $base-size: $base-size, $size-count: $size-count)
-  @for $i from 1 through $size-count
+  @for $i from 0 through $size-count
     @if $breakpoint-scope == false
-      .u-m-#{strip_unit($i * $base-size * 16)}
+      .u-m-#{strip_unit($i * $base-size * $rem)}
         margin: $i * $base-size
-      .u-mt-#{strip_unit($i * $base-size * 16)}
+      .u-mt-#{strip_unit($i * $base-size * $rem)}
         margin-top: $i * $base-size
-      .u-mr-#{strip_unit($i * $base-size * 16)}
+      .u-mr-#{strip_unit($i * $base-size * $rem)}
         margin-right: $i * $base-size
-      .u-mb-#{strip_unit($i * $base-size * 16)}
+      .u-mb-#{strip_unit($i * $base-size * $rem)}
         margin-bottom: $i * $base-size
-      .u-ml-#{strip_unit($i * $base-size * 16)}
+      .u-ml-#{strip_unit($i * $base-size * $rem)}
         margin-left: $i * $base-size
     @else
-      .#{$breakpoint-scope}\:u-m-#{strip_unit($i * $base-size * 16)}
+      .#{$breakpoint-scope}\:u-m-#{strip_unit($i * $base-size * $rem)}
         margin: $i * $base-size
-      .#{$breakpoint-scope}\:u-mt-#{strip_unit($i * $base-size * 16)}
+      .#{$breakpoint-scope}\:u-mt-#{strip_unit($i * $base-size * $rem)}
         margin-top: $i * $base-size
-      .#{$breakpoint-scope}\:u-mr-#{strip_unit($i * $base-size * 16)}
+      .#{$breakpoint-scope}\:u-mr-#{strip_unit($i * $base-size * $rem)}
         margin-right: $i * $base-size
-      .#{$breakpoint-scope}\:u-mb#{strip_unit($i * $base-size * 16)}
+      .#{$breakpoint-scope}\:u-mb#{strip_unit($i * $base-size * $rem)}
         margin-bottom: $i * $base-size
-      .#{$breakpoint-scope}\:u-ml#{strip_unit($i * $base-size * 16)}
+      .#{$breakpoint-scope}\:u-ml#{strip_unit($i * $base-size * $rem)}
         margin-left: $i * $base-size
 
 +generate-margin(false)
