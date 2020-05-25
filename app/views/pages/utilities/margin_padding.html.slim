@@ -24,12 +24,27 @@
           hr.a-hr-border
           .m-card__body
             .container
-              - for i in 1..10
+              - directions = {nil: nil, top: "t", right: "r", bottom: "b", left: "l"}
+              - directions.each do |d, v|
                 .m-card__blocks
-                  .u-fz-5.u-fw-600
-                    | .u-fz-#{i}
-                  div(class="u-fz-#{i}")
-                    | それは黄金の昼下がり気ままにただようぼくら
+                  table.a-basic-table
+                    thead
+                      tr
+                        th class
+                        th value
+                        th px
+                    tbody
+                      - for i in 0..20
+                        tr
+                          td
+                            | .u-m#{v}-#{i * 4}
+                          td
+                            - if v
+                              | margin-#{d}: #{i * 0.25}rem
+                            - else
+                              | margin: #{i * 0.25}rem
+                          td
+                            | #{i * 0.25 * 16}px
 
       .t-grids__item.u-col-6
         .m-card
@@ -39,9 +54,24 @@
           hr.a-hr-border
           .m-card__body
             .container
-              - for i in 1..9
+              - directions = {nil: nil, top: "t", right: "r", bottom: "b", left: "l"}
+              - directions.each do |d, v|
                 .m-card__blocks
-                  .u-fz-5.u-fw-600
-                    | .u-fw-#{i * 100}
-                  .u-fz-5(class="u-fw-#{i * 100}")
-                    | それは黄金の昼下がり気ままにただようぼくら
+                  table.a-basic-table
+                    thead
+                      tr
+                        th class
+                        th value
+                        th px
+                    tbody
+                      - for i in 0..20
+                        tr
+                          td
+                            | .u-p#{v}-#{i * 4}
+                          td
+                            - if v
+                              | padding-#{d}: #{i * 0.25}rem
+                            - else
+                              | padding: #{i * 0.25}rem
+                          td
+                            | #{(i * 0.25 * 16)}px
