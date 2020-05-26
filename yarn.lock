@@ -4246,6 +4246,11 @@ micromatch@^3.0.4, micromatch@^3.1.10, micromatch@^3.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
 
+mikanjs@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/mikanjs/-/mikanjs-1.0.11.tgz#0c2c23763bf501b0ad9643495981ef97b8cb435d"
+  integrity sha512-ujAW9g/d6cMjyfVXXGGvKAlUt3VhITlWDVDaKNWCMF53LGBmllDzCMOWrKyTvtH5QZiQsTlRApFJxFTqFM9SMg==
+
 miller-rabin@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/miller-rabin/-/miller-rabin-4.0.1.tgz#f080351c865b0dc562a8462966daa53543c78a4d"
