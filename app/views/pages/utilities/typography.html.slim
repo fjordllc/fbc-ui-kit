@@ -14,34 +14,39 @@
 = render "utilities_tabs"
 
 .t-fixed-left-nav__body
-  .container.is-mxw-100pc
-    .t-grids
-      .t-grids__item.u-col-6
-        .m-card
-          .m-card__header
-            h2.m-card__title
-              | FontSize
-          hr.a-hr-border
-          .m-card__body
-            .container
-              - for i in 1..10
-                .m-card__blocks
-                  .u-fz-5.u-fw-600
-                    | .u-fz-#{i}
-                  div(class="u-fz-#{i}")
-                    | それは黄金の昼下がり気ままにただようぼくら
+  .t-fixed-left-nav__contents
+    .container.is-mxw-100pc
+      .t-grids
+        .t-grids__item.u-col-6
+          .o-app-content
+            .o-app-content__inner
+              .m-card
+                .m-card__header
+                  h2.m-card__title
+                    | FontSize
+                hr.a-hr-border
+                .m-card__body
+                  .container
+                    - for i in 1..10
+                      .m-card__blocks
+                        .u-fz-5.u-fw-600
+                          | .u-fz-#{i}
+                        div(class="u-fz-#{i}")
+                          | それは黄金の昼下がり気ままにただようぼくら
 
-      .t-grids__item.u-col-6
-        .m-card
-          .m-card__header
-            h2.m-card__title
-              | FontWeight
-          hr.a-hr-border
-          .m-card__body
-            .container
-              - for i in 1..9
-                .m-card__blocks
-                  .u-fz-5.u-fw-600
-                    | .u-fw-#{i * 100}
-                  .u-fz-5(class="u-fw-#{i * 100}")
-                    | それは黄金の昼下がり気ままにただようぼくら
+        .t-grids__item.u-col-6
+          .o-app-content
+            .o-app-content__inner
+              .m-card
+                .m-card__header
+                  h2.m-card__title
+                    | FontWeight
+                hr.a-hr-border
+                .m-card__body
+                  .container
+                    - for i in 1..9
+                      .m-card__blocks
+                        .u-fz-5.u-fw-600
+                          | .u-fw-#{i * 100}
+                        .u-fz-5(class="u-fw-#{i * 100}")
+                          | それは黄金の昼下がり気ままにただようぼくら

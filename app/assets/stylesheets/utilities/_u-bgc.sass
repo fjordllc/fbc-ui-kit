@@ -1,0 +1,11 @@
+@each $color, $value in colorMap($baseColors, 10)
+  .u-bgc-#{$color}
+    background-color: $value
+
+@each $color, $value in colorMap($baseColors, 10)
+  .u-c-#{$color}
+    color: $value
+
+@each $color, $value in colorMap($baseColors, 10)
+  .u-bdc-#{$color}
+    border-color: $value

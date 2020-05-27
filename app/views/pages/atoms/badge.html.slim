@@ -20,40 +20,42 @@
     .t-grids
       - sizes.each do |size|
         .t-grids__item.u-col-6
-          .m-card
-            .m-card__header
-              h3.m-card__title
-                | Size #{size}
-            hr.a-hr-border
-            .m-card__body
-              .container
-                .m-card__blocks
-                  - ui_colors.each do |color|
-                    .row
-                      .col-xs-6.col-lg-4
-                        .m-style-block
-                          .m-style-block__start
-                            span(class="a-badge is-#{size} is-#{color}")
-                              | Badge
-                          .m-style-block__end
-                            pre.a-basic-code
-                              code
-                                | .a-badge.is-#{size}.is-#{color}
-                      .col-xs-6.col-lg-4
-                        .m-style-block
-                          .m-style-block__start
-                            span(class="a-badge is-#{size} is-#{color} is-block")
-                              | Block Badge
-                          .m-style-block__end
-                            pre.a-basic-code
-                              code
-                                | .a-badge.is-#{size}.is-#{color}.is-block
-                      .col-xs-6.col-lg-4
-                        .m-style-block
-                          .m-style-block__start
-                            span(class="a-badge is-#{size} is-#{color}-border")
-                              | Border Badge
-                          .m-style-block__end
-                            pre.a-basic-code
-                              code
-                                | .a-badge.is-#{size}.is-#{color}-border
+          .o-app-content
+            .o-app-content__inner
+              .m-card
+                .m-card__header
+                  h3.m-card__title
+                    | Size #{size}
+                hr.a-hr-border
+                .m-card__body
+                  .container
+                    .m-card__blocks
+                      - ui_colors.each do |color|
+                        .row
+                          .col-xs-6.col-lg-4
+                            .m-style-block
+                              .m-style-block__start
+                                span(class="a-badge is-#{size} is-#{color}")
+                                  | Badge
+                              .m-style-block__end
+                                pre.a-basic-code
+                                  code
+                                    | .a-badge.is-#{size}.is-#{color}
+                          .col-xs-6.col-lg-4
+                            .m-style-block
+                              .m-style-block__start
+                                span(class="a-badge is-#{size} is-#{color} is-block")
+                                  | Block Badge
+                              .m-style-block__end
+                                pre.a-basic-code
+                                  code
+                                    | .a-badge.is-#{size}.is-#{color}.is-block
+                          .col-xs-6.col-lg-4
+                            .m-style-block
+                              .m-style-block__start
+                                span(class="a-badge is-#{size} is-#{color}-border")
+                                  | Border Badge
+                              .m-style-block__end
+                                pre.a-basic-code
+                                  code
+                                    | .a-badge.is-#{size}.is-#{color}-border

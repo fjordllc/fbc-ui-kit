@@ -10,7 +10,12 @@
   color: $muted-text
   border-radius: .1875rem
   border: solid 1px $border
+  +block-hover
+  &:hover
+    background-color: $base
+    color: $primary
   &.is-active
     background-color: $main
     color: $reversal-text
     border-color: $main
+    pointer-events: none

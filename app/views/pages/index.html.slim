@@ -1,65 +1,67 @@
 .t-fixed-left-nav__body
-  .container.is-mxw-100pc
-    .t-fixed-left-nav__body-start
-      .m-inline-lists
-        .m-inline-lists__row
-          .m-inline-list
-            h2.m-inline-list__title
-              | LP
-            .m-inline-list__items
-              .m-inline-list__item
-                = link_to static_page_path("welcome"), class: "a-link-text" do
-                  | Welcom
-              .m-inline-list__item
-                = link_to static_page_path("practices"), class: "a-link-text" do
-                  | 学習内容
-              .m-inline-list__item
-                = link_to static_page_path("tos"), class: "a-link-text" do
-                  | 利用規約
-              .m-inline-list__item
-                = link_to static_page_path("pp"), class: "a-link-text" do
-                  | プライバシーポリシー
-              .m-inline-list__item
-                = link_to static_page_path("coc"), class: "a-link-text" do
-                  | アンチハラスメントポリシー
-              .m-inline-list__item
-                = link_to static_page_path("articles"), class: "a-link-text" do
-                  | お知らせ一覧
-              .m-inline-list__item
-                = link_to static_page_path("article"), class: "a-link-text" do
-                  | お知らせ個別
-              .m-inline-list__item
-                = link_to static_page_path("faq"), class: "a-link-text" do
-                  | よくある質問と答え
-              .m-inline-list__item
-                = link_to static_page_path("contact"), class: "a-link-text" do
-                  | お問い合わせ
+  .t-fixed-left-nav__contents
+    .o-app-content
+      .container.is-mxw-100pc
+        .o-app-content__inner
+          .m-inline-lists
+            .m-inline-lists__row
+              .m-inline-list
+                h2.m-inline-list__title
+                  | LP
+                .m-inline-list__items
+                  .m-inline-list__item
+                    = link_to static_page_path("welcome"), class: "a-link-text" do
+                      | Welcom
+                  .m-inline-list__item
+                    = link_to static_page_path("practices"), class: "a-link-text" do
+                      | 学習内容
+                  .m-inline-list__item
+                    = link_to static_page_path("tos"), class: "a-link-text" do
+                      | 利用規約
+                  .m-inline-list__item
+                    = link_to static_page_path("pp"), class: "a-link-text" do
+                      | プライバシーポリシー
+                  .m-inline-list__item
+                    = link_to static_page_path("coc"), class: "a-link-text" do
+                      | アンチハラスメントポリシー
+                  .m-inline-list__item
+                    = link_to static_page_path("articles"), class: "a-link-text" do
+                      | お知らせ一覧
+                  .m-inline-list__item
+                    = link_to static_page_path("article"), class: "a-link-text" do
+                      | お知らせ個別
+                  .m-inline-list__item
+                    = link_to static_page_path("faq"), class: "a-link-text" do
+                      | よくある質問と答え
+                  .m-inline-list__item
+                    = link_to static_page_path("contact"), class: "a-link-text" do
+                      | お問い合わせ
 
-        .m-inline-lists__row
-          .m-inline-list
-            h2.m-inline-list__title
-              | Auth
-            .m-inline-list__items
-              .m-inline-list__item
-                = link_to static_page_path("login"), class: "a-link-text" do
-                  | ログイン
-              .m-inline-list__item
-                = link_to static_page_path("signup"), class: "a-link-text" do
-                  | サインアップ
-              .m-inline-list__item
-                = link_to static_page_path("new_password"), class: "a-link-text" do
-                  | パスワード再発行
-        .m-inline-lists__row
-          .m-inline-list
-            h2.m-inline-list__title
-              | Application
-            .m-inline-list__items
-              .m-inline-list__item
-                = link_to static_page_path("users"), class: "a-link-text" do
-                  | ユーザー一覧
-              .m-inline-list__item
-                = link_to static_page_path("user"), class: "a-link-text" do
-                  | ユーザー個別
-              .m-inline-list__item
-                = link_to static_page_path("edit_user"), class: "a-link-text" do
-                  | ユーザー編集
+            .m-inline-lists__row
+              .m-inline-list
+                h2.m-inline-list__title
+                  | Auth
+                .m-inline-list__items
+                  .m-inline-list__item
+                    = link_to static_page_path("login"), class: "a-link-text" do
+                      | ログイン
+                  .m-inline-list__item
+                    = link_to static_page_path("signup"), class: "a-link-text" do
+                      | サインアップ
+                  .m-inline-list__item
+                    = link_to static_page_path("new_password"), class: "a-link-text" do
+                      | パスワード再発行
+            .m-inline-lists__row
+              .m-inline-list
+                h2.m-inline-list__title
+                  | Application
+                .m-inline-list__items
+                  .m-inline-list__item
+                    = link_to static_page_path("users"), class: "a-link-text" do
+                      | ユーザー一覧
+                  .m-inline-list__item
+                    = link_to static_page_path("user"), class: "a-link-text" do
+                      | ユーザー個別
+                  .m-inline-list__item
+                    = link_to static_page_path("edit_user"), class: "a-link-text" do
+                      | ユーザー編集
