@@ -22,22 +22,20 @@ hr.a-hr-border
   .container.is-mxw-100pc
     .t-fixed-left-nav__contents
       .o-app-content
-        .o-app-content__inner
-          = render "o_pill_tabs"
+        = render "o_pill_tabs"
       .o-app-content
-        .o-app-content__inner
-          .o-app-content__header
-            h2.o-app-content__title
-              | ダッシュボード
-          .o-app-content__body
-            .t-grids
-              .t-grids__item.u-col-4.u-row-2
-                = render "basic_form"
-              .t-grids__item.u-col-8
-                = render "basic_form_2"
-              .t-grids__item.u-col-8
-                = render "o_basic_table"
-              .t-grids__item.u-col-3
-                = render "card_nav"
-              .t-grids__item.u-col-5
-                = render "users_user"
+        .o-app-content__header
+          h2.o-app-content__title
+            | ダッシュボード
+        .o-app-content__body
+          .t-grids
+            .t-grids__item.u-col-4.u-row-2
+              = render "basic_form"
+            .t-grids__item.u-col-8
+              = render "basic_form_2"
+            .t-grids__item.u-col-8
+              = render "o_basic_table"
+            .t-grids__item.u-col-3
+              = render "card_nav"
+            .t-grids__item.u-col-5
+              = render "users_user"

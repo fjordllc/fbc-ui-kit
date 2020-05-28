@@ -5,6 +5,12 @@
 @each $color, $value in colorMap($baseColors, 10)
   .u-c-#{$color}
     color: $value
+  .hover:\u-c-#{$color}
+    &:hover
+      color: $value
+  .active:\u-c-#{$color}
+    &:hover
+      color: $value
 
 @each $color, $value in colorMap($baseColors, 10)
   .u-bdc-#{$color}

@@ -1,0 +1,4 @@
+$border-styles: none, hidden, solid, double, groove, ridge, inset, outset, dashed, dotted
+@each $style in $border-styles
+  .u-bds-#{$style}
+    border-style: $style
