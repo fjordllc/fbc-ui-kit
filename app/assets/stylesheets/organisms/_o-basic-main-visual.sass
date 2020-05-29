@@ -1,7 +1,16 @@
 .o-basic-main-visual
   background-color: $main
-  background: rgb(79,60,204)
-  background: linear-gradient(160deg, rgba(79,60,204,1) 0%, rgba(78,215,132,1) 100%)
+  //background: linear-gradient(160deg, rgba(79,60,204,1) 0%, rgba(78,215,132,1) 100%)
+  +position(relative)
+  &::before
+    content: ""
+    +position(absolute, left 0, top 0)
+    +size(100%)
+    background-image: image_url("main-visual.svg")
+    background-size: 20%
+    background-repeat: repeat
+    opacity: .4
+    background-position: center
 
 .o-basic-main-visual__inner
   height: 30rem

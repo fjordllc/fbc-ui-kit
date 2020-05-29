@@ -1,5 +1,16 @@
 = render "/lp/welcome/main_visual"
 .t-lp__contents
+  .o-lp-content
+    .container
+      .o-lp-content__inner
+        .o-lp-content__body
+          .o-lp-content__row
+            .t-grids
+              .t-grids__item.u-col-8.md-down:u-col-12
+                = render "/lp/article_summary"
+              .t-grids__item.u-col-4.md-down:u-col-12
+                = render "/lp/vertical_articles"
+  hr.a-hr-border
   = render "/lp/welcome/articles"
   hr.a-hr-border
   = render "/lp/welcome/lerning_procedure"

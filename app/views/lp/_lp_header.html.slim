@@ -1,30 +1,35 @@
-header.o-basic-header
+header.o-lp-header
   .container.is-mxw-100pc
-    .o-basic-header__inner
-      .o-basic-header__start
+    .o-lp-header__inner
+      .o-lp-header__start
         h1.a-brand-logo
           = link_to root_path, class: "a-brand-logo__link" do
            | FBC UI KIT
-        .o-basic-header__page-links.md-down:u-hidden
+        .o-lp-header__page-links.md-down:u-hidden
           .m-inline-list
             .m-inline-list__items
               .m-inline-list__item
-                = link_to static_page_path("articles"), class: "a-pill-link"
-                  | お知らせ
+                = link_to static_page_path("articles"), class: "a-pill-link" do
+                  span
+                    | お知らせ
               .m-inline-list__item
-                = link_to "", class: "a-pill-link"
-                  | 企業研修代行
+                = link_to "", class: "a-pill-link" do
+                  span
+                    | 企業研修代行
               .m-inline-list__item
-                = link_to "", class: "a-pill-link"
-                  | カリキュラム一覧
+                = link_to "", class: "a-pill-link" do
+                  span
+                    | カリキュラム一覧
               .m-inline-list__item
-                = link_to static_page_path("faq"), class: "a-pill-link"
-                  | よくある質問
+                = link_to static_page_path("faq"), class: "a-pill-link" do
+                  span
+                    | よくある質問
               .m-inline-list__item
-                = link_to "", class: "a-pill-link"
-                  | 企業様へ
-      .o-basic-header__end
-        .o-basic-header__auth-links
+                = link_to "", class: "a-pill-link" do
+                  span
+                    | 企業様へ
+      .o-lp-header__end
+        .o-lp-header__auth-links
           .m-inline-list
             .m-inline-list__items
               .m-inline-list__item
