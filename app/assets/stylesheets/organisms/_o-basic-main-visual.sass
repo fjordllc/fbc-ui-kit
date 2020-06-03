@@ -1,6 +1,5 @@
 .o-basic-main-visual
   background-color: $main
-  //background: linear-gradient(160deg, rgba(79,60,204,1) 0%, rgba(78,215,132,1) 100%)
   +position(relative)
   &::before
     content: ""
@@ -16,3 +15,10 @@
   height: 32rem
   +position(relative, 1)
   color: $reversal-text
+  display: flex
+  align-items: center
+
+.o-basic-main-visual__title
+  font-size: 3rem
+  font-weight: 700
+  line-height: 1.35
