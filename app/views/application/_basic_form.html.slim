@@ -21,6 +21,22 @@
         .m-form-item
           .m-form-item__start
             label.a-form-label
+              | 日付インプット
+              span.a-badge.is-danger-border.is-xs
+                | 必須
+          .m-form-item__end
+            input.a-text-input.is-block(type="date")
+        .m-form-item
+          .m-form-item__start
+            label.a-form-label
+              | 日付時間インプット
+              span.a-badge.is-danger-border.is-xs
+                | 必須
+          .m-form-item__end
+            input.a-text-input.is-block(type="datetime-local")
+        .m-form-item
+          .m-form-item__start
+            label.a-form-label
               | テキストエリア
               span.a-badge.is-danger-border.is-xs
                 | 必須
