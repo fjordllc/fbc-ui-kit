@@ -1,24 +1,53 @@
 .o-basic-main-visual
-  background-color: $main
+  background-color: $lp-main
+  background-image: linear-gradient(45deg, $main, #4e66da)
   +position(relative)
+  +padding(vertical, 4.25rem 5rem)
+  color: $reversal-text
   &::before
     content: ""
-    +position(absolute, left 0, top 0)
-    +size(100%)
-    background-image: image_url("main-visual.svg")
-    background-size: 20%
+    display: block
+    background-image: image_url("background.svg")
+    +position(absolute, left 0, bottom 0, right 0, top 0, 1)
     background-repeat: repeat
-    opacity: .4
-    background-position: center
+    background-size: 18%
+    +size(100%)
+    opacity: .05
+  &::after
+    content: ""
+    display: block
+    background-image: image_url("main-visual-bottom.svg")
+    +position(absolute, left 0, bottom 0, right 0, 2)
+    background-repeat: repeat
+    background-size: contain
+    +size(100% 5rem)
 
 .o-basic-main-visual__inner
-  height: 32rem
-  +position(relative, 1)
-  color: $reversal-text
+  +position(relative, 3)
+  +padding(vertical, 2rem 4rem)
+
+.o-basic-main-visual__hgroup
   display: flex
-  align-items: center
+  flex-direction: column
+  justify-content: center
+  text-align: center
+
+.o-basic-main-visual__logo-image
+  +size(6.25rem auto)
+  +margin(horizontal, auto)
+  margin-bottom: .75rem
 
 .o-basic-main-visual__title
-  font-size: 3rem
+  font-size: 3.5rem
   font-weight: 700
   line-height: 1.35
+  text-shadow: rgba(black, .4) 0 -1px 3px
+
+.o-basic-main-visual__description
+  margin-top: 1em
+  text-shadow: rgba(black, .3) 0 0 .5em
+
+.o-basic-main-visual__actions
+  margin-top: 1.75rem
+  .m-horizontal-buttons__items
+    +flex-grid(1.25rem, nowrap, center)

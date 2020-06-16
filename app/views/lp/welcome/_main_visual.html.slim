@@ -1,7 +1,21 @@
 .o-basic-main-visual
-  .container
-    .o-basic-main-visual__inner
-      h1.o-basic-main-visual__title
-        | 現場のプログラマーが考える
-        br
-        | ふつうのプログラミングスクール
+  .o-basic-main-visual__inner
+    .o-basic-main-visual__hgroup
+      .container
+        = image_tag("piyo.svg", class: "o-basic-main-visual__logo-image")
+        h1.o-basic-main-visual__title
+          | プロになるための
+          br
+          | プログラミングスクール
+    .o-basic-main-visual__description
+      .container.is-md
+        .a-short-text
+          p
+            | それは黄金の昼下がり気ままにただようぼくらオールは二本ともあぶなげに小さな腕で漕がれ小さな手がぼくらのただよいを導こうとかっこうだけ申し訳につけてああ残酷な三人！こんな時間にこんな夢見る天気のもとで
+    .o-basic-main-visual__actions
+      .container.is-md
+        .m-horizontal-buttons
+          .m-horizontal-buttons__items
+            .m-horizontal-buttons__item
+              = link_to "", class: "a-button is-xl is-3d-warning is-block" do
+                | お申込はこちら

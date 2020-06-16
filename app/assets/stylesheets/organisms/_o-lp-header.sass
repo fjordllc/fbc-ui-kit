@@ -1,9 +1,8 @@
 $lp-header-height: 4.25rem !default
 
 .o-lp-header
-  height: $lp-header-height
-  background-color: $base
-  +position(relative, 2)
+  +position(absolute, left 0, top 0, 4)
+  width: 100%
   .container
     height: inherit
   .m-horizontal-icon-blocks
@@ -11,12 +10,15 @@ $lp-header-height: 4.25rem !default
 
 .o-lp-header__inner
   display: flex
-  height: inherit
+  height: $lp-header-height
   justify-content: space-between
 
 .o-lp-header__start
   display: flex
   align-items: center
+  .is-welcome-index &
+    .a-brand-logo__link
+      color: $reversal-text
 
 .o-lp-header__page-links
   margin-left: 1.25rem
@@ -42,6 +44,10 @@ $lp-header-height: 4.25rem !default
       &::before
         +size(100%)
         opacity: .3
+    .is-welcome-index &
+      color: $reversal-text
+      &::before
+        background-color: $warning
 
 .o-lp-header__auth-links
   display: flex

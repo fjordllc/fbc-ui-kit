@@ -1,3 +1,5 @@
+- content_for(:extra_body_classes, "is-welcome-index")
+
 = render "/lp/welcome/main_visual"
 .t-lp__contents
   .o-lp-content
@@ -14,7 +16,9 @@
                         .m-media-attributes__col
                           .m-media-attributes__row
                             h2.m-media-attributes__title
-                              | どんな小さな羽さえもな羽さえもそよがぬ
+                              | 徹底的に現場目線
+                              br
+                              | 本格的なコードレビュー
                           .m-media-attributes__row
                             .m-media-attributes__list
                               .m-media-attributes__row
@@ -22,7 +26,28 @@
                                   .a-short-text
                                     p
                                       | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
-              .t-grids__item.u-col-8.md-down:u-col-12
+              .t-grids__item.u-col-7.md-down:u-col-12
+          .o-lp-content__row
+            .t-grids
+              .t-grids__item.u-col-7.md-down:u-col-12
+              .t-grids__item.u-col-5.md-down:u-col-12
+                .o-media-summary
+                  = link_to "", class: "m-medias-media" do
+                    .m-medias-media__col
+                      .m-media-attributes
+                        .m-media-attributes__col
+                          .m-media-attributes__row
+                            h2.m-media-attributes__title
+                              | メンターは信頼のおける
+                              br
+                              | 現役プログラマー
+                          .m-media-attributes__row
+                            .m-media-attributes__list
+                              .m-media-attributes__row
+                                .m-media-attributes__summary
+                                  .a-short-text
+                                    p
+                                      | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
           .o-lp-content__row
             .t-grids
               .t-grids__item.u-col-5.md-down:u-col-12
@@ -33,7 +58,9 @@
                         .m-media-attributes__col
                           .m-media-attributes__row
                             h2.m-media-attributes__title
-                              | どんな小さな羽さえもな羽さえもそよがぬ
+                              | みんな最高！
+                              br
+                              | 楽しいコミュニティ
                           .m-media-attributes__row
                             .m-media-attributes__list
                               .m-media-attributes__row
@@ -41,34 +68,17 @@
                                   .a-short-text
                                     p
                                       | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
-              .t-grids__item.u-col-8.md-down:u-col-12
-          .o-lp-content__row
-            .t-grids
-              .t-grids__item.u-col-5.md-down:u-col-12
-                .o-media-summary
-                  = link_to "", class: "m-medias-media" do
-                    .m-medias-media__col
-                      .m-media-attributes
-                        .m-media-attributes__col
-                          .m-media-attributes__row
-                            h2.m-media-attributes__title
-                              | どんな小さな羽さえもな羽さえもそよがぬ
-                          .m-media-attributes__row
-                            .m-media-attributes__list
-                              .m-media-attributes__row
-                                .m-media-attributes__summary
-                                  .a-short-text
-                                    p
-                                      | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
-              .t-grids__item.u-col-8.md-down:u-col-12
+              .t-grids__item.u-col-7.md-down:u-col-12
+        .o-lp-content__body
+          = render "/lp/features"
+  hr.a-hr-border
+  = render "/lp/welcome/mentors"
   hr.a-hr-border
   = render "/lp/welcome/articles"
   hr.a-hr-border
   = render "/lp/welcome/lerning_procedure"
   hr.a-hr-border
   = render "/lp/welcome/features"
-  hr.a-hr-border
-  = render "/lp/welcome/mentors"
   hr.a-hr-border
   = render "/lp/welcome/practices"
   hr.a-hr-border
