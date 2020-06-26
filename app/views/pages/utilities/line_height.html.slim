@@ -1,0 +1,39 @@
+= render "page_header", title: "Utilities" do
+  .m-horizontal-buttons
+    .m-horizontal-buttons__items
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-primary is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-warning is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-danger is-md" do
+          | ああああああ
+
+= render "utilities_tabs"
+
+.t-fixed-left-nav__body
+  .t-fixed-left-nav__contents
+    .container.is-mxw-100pc
+      .t-grids
+        .t-grids__item.u-col-6
+          .o-app-content
+            .o-app-content__header
+              h2.o-app-content__title
+                | Line Height
+            table.a-basic-table
+              thead
+                tr
+                  th class
+                  th value
+                  th px
+              tbody
+                - for i in 0..20
+                  tr
+                    td
+                      | .u-lh-vr-#{i}
+                    td
+                      | line-height: #{i * 0.25}rem
+                    td
+                      | #{i * 0.25 * 16}px

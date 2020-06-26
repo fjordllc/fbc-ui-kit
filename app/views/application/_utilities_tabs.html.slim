@@ -13,3 +13,9 @@
       .o-basic-tabs__item
         = link_to "/utilities/width_height", class: "o-basic-tabs__item-link #{current?("utilities/width_height") ? "is-active" : ""}" do
           | Width & Height
+      .o-basic-tabs__item
+        = link_to "/utilities/line_height", class: "o-basic-tabs__item-link #{current?("utilities/line_height") ? "is-active" : ""}" do
+          | Line Height
+      .o-basic-tabs__item
+        = link_to "/utilities/vertical_rhythm", class: "o-basic-tabs__item-link #{current?("utilities/vertical_rhythm") ? "is-active" : ""}" do
+          | Vertical Rhythm

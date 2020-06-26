@@ -1,29 +1,25 @@
-$base-size: 1rem
-$size-count: 10
-$size-multiple: 8
-
-@for $i from 1 through $size-count
-  $size: ($size-count + 1) - $i
+@for $i from 1 through $font-size-steps
+  $size: ($font-size-steps + 1) - $i
   .u-fz-#{$size}
-    font-size: $base-size * $size-multiple / $i
+    font-size: fz($size)
 
 @each $breakpoint in map-keys($grid-breakpoints)
   +media-breakpoint-only(#{$breakpoint})
-    @for $i from 1 through $size-count
-      $size: ($size-count + 1) - $i
+    @for $i from 1 through $font-size-steps
+      $size: ($font-size-steps + 1) - $i
       .#{$breakpoint}\:u-fz-#{$size}
-        font-size: $base-size * $size-multiple / $i
+        font-size: fz($size)
 
 @each $breakpoint in map-keys($grid-breakpoints)
   +media-breakpoint-down(#{$breakpoint})
-    @for $i from 1 through $size-count
-      $size: ($size-count + 1) - $i
+    @for $i from 1 through $font-size-steps
+      $size: ($font-size-steps + 1) - $i
       .#{$breakpoint}-down\:u-fz-#{$size}
-        font-size: $base-size * $size-multiple / $i
+        font-size: fz($size)
 
 @each $breakpoint in map-keys($grid-breakpoints)
   +media-breakpoint-up(#{$breakpoint})
-    @for $i from 1 through $size-count
-      $size: ($size-count + 1) - $i
+    @for $i from 1 through $font-size-steps
+      $size: ($font-size-steps + 1) - $i
       .#{$breakpoint}-up\:u-fz-#{$size}
-        font-size: $base-size * $size-multiple / $i
+        font-size: fz($size)

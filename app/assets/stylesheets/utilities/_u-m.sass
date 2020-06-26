@@ -15,6 +15,16 @@ $rem: strip_unit($rem)
         margin-bottom: $i * $base-size
       .u-ml-#{strip_unit($i * $base-size * $rem)}
         margin-left: $i * $base-size
+      .u-m-vr-#{$i}
+        margin: vr($i)
+      .u-mt-vr-#{$i}
+        margin-top: vr($i)
+      .u-mr-vr-#{$i}
+        margin-right: vr($i)
+      .u-mb-vr-#{$i}
+        margin-bottom: vr($i)
+      .u-ml-vr-#{$i}
+        margin-left: vr($i)
     @else
       .#{$breakpoint-scope}\:u-m-#{strip_unit($i * $base-size * $rem)}
         margin: $i * $base-size
@@ -26,6 +36,16 @@ $rem: strip_unit($rem)
         margin-bottom: $i * $base-size
       .#{$breakpoint-scope}\:u-ml#{strip_unit($i * $base-size * $rem)}
         margin-left: $i * $base-size
+      .#{$breakpoint-scope}\:u-m-vr-#{$i}
+        margin: vr($i)
+      .#{$breakpoint-scope}\:u-mt-vr-#{$i}
+        margin-top: vr($i)
+      .#{$breakpoint-scope}\:u-mr-vr-#{$i}
+        margin-right: vr($i)
+      .#{$breakpoint-scope}\:u-mb-vr-#{$i}
+        margin-bottom: vr($i)
+      .#{$breakpoint-scope}\:u-ml-vr-#{$i}
+        margin-left: vr($i)
 
 +generate-margin(false)
 @each $breakpoint in map-keys($grid-breakpoints)

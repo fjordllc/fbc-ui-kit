@@ -17,7 +17,7 @@
     @return null
 
 @function font_weight($value)
-  @if $value == "bold" or $value == "normal"
+  @if $value == "bold" or $value == "normal" or $value == "lighter" or $value == "bolder"
     @return true
   @else if unitless_number($value)
     @if $value >= 100

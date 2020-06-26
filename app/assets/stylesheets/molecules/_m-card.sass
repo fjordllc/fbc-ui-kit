@@ -5,7 +5,7 @@
   height: 100%
   .a-link-block
     +padding(horizontal, 1.25rem)
-  .m-style-block
+  .m-style-block:not(:last-child)
     margin-bottom: 1.25rem
   .a-basic-table
     font-size: .875rem
@@ -46,8 +46,14 @@ a.m-card
 .m-card__blocks
   +padding(vertical, 1.25rem)
   margin-bottom: -1.25rem
-  &:first-child:last-child
+  &:last-child
     margin-bottom: 0
+  .row
+    margin-bottom: -1.25rem
+  .row + .row
+    margin-top: 1.25rem
+  [class*=col-]
+    margin-bottom: 1.25rem
 
 .m-card__footer
   .m-horizontal-buttons
