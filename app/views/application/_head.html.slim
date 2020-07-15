@@ -5,6 +5,10 @@ head
   = csp_meta_tag
   meta(name="viewport" content="width=device-width,initial-scale=1")
   = stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload"
+  // YakuhanJP
+  = stylesheet_link_tag "https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp_s-narrow.min.css", media: "all", "data-turbolinks-track": "reload"
+  = stylesheet_link_tag "https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp-narrow.min.css", media: "all", "data-turbolinks-track": "reload"
+  // GoogleFonts
   = stylesheet_link_tag "https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap", media: "all", "data-turbolinks-track": "reload"
   - if Rails.env == "development"
     = stylesheet_link_tag "dev", media: "all", "data-turbolinks-track": "reload"

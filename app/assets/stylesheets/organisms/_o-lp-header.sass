@@ -1,8 +1,24 @@
 $lp-header-height: 4.25rem !default
 
 .o-lp-header
-  +position(absolute, left 0, top 0, 4)
-  width: 100%
+  background-color: $main
+  background-image: linear-gradient(45deg, $main, #4e66da)
+  +position(relative)
+  &::before
+    content: ""
+    display: block
+    background-image: image_url("background.svg")
+    +position(absolute, left 0, bottom 0, right 0, top 0, 1)
+    background-repeat: repeat
+    background-size: 10%
+    +size(100%)
+    opacity: .05
+  .is-welcome-index &
+    +position(absolute, left 0, top 0, 4)
+    width: 100%
+    background: none
+  .is-welcome-index &::before
+    content: none
   .container
     height: inherit
   .m-horizontal-icon-blocks
@@ -12,13 +28,13 @@ $lp-header-height: 4.25rem !default
   display: flex
   height: $lp-header-height
   justify-content: space-between
+  +position(relative, 2)
 
 .o-lp-header__start
   display: flex
   align-items: center
-  .is-welcome-index &
-    .a-brand-logo__link
-      color: $reversal-text
+  .a-brand-logo__link
+    color: $reversal-text
 
 .o-lp-header__page-links
   margin-left: 1.25rem
@@ -26,7 +42,7 @@ $lp-header-height: 4.25rem !default
   .m-inline-list__items
     +flex-grid(0, nowrap)
   .a-pill-link
-    color: $muted-text
+    color: $reversal-text
     position: relative
     transition: all .2s ease-out
     &::before
@@ -40,14 +56,10 @@ $lp-header-height: 4.25rem !default
       +size(70%)
       transition: all .2s ease-out
     &:hover
-      color: $default-text
+      background-color: $warning
       &::before
         +size(100%)
         opacity: .3
-    .is-welcome-index &
-      color: $reversal-text
-      &::before
-        background-color: $warning
 
 .o-lp-header__auth-links
   display: flex

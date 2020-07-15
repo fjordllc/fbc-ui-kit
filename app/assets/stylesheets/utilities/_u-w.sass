@@ -4,20 +4,22 @@ $rem: strip_unit($rem)
 
 =generate-width($breakpoint-scope: false, $base-size: $base-size, $size-count: $size-count)
   @for $i from 0 through $size-count
+    $px: strip_unit($i * $base-size * $rem)
+    $width: $i * $base-size
     @if $breakpoint-scope == false
-      .u-w-#{strip_unit($i * $base-size * $rem)}
-        width: $i * $base-size
-      .u-maw-#{strip_unit($i * $base-size * $rem)}
-        max-width: $i * $base-size
-      .u-miw-#{strip_unit($i * $base-size * $rem)}
-        min-width: $i * $base-size
+      .u-w-#{$px}#{if($px != 0, px, null)}
+        width: #{$width}
+      .u-maw-#{$px}#{if($px != 0, px, null)}
+        max-width: #{$width}
+      .u-miw-#{$px}#{if($px != 0, px, null)}
+        min-width: #{$width}
     @else
-      .#{$breakpoint-scope}\:u-w-#{strip_unit($i * $base-size * $rem)}
-        width: $i * $base-size
-      .#{$breakpoint-scope}\:u-maw-#{strip_unit($i * $base-size * $rem)}
-        max-width: $i * $base-size
-      .#{$breakpoint-scope}\:u-miw-#{strip_unit($i * $base-size * $rem)}
-        min-width: $i * $base-size
+      .#{$breakpoint-scope}\:u-w-#{$px}#{if($px != 0, px, null)}
+        width: #{$width}
+      .#{$breakpoint-scope}\:u-maw-#{$px}#{if($px != 0, px, null)}
+        max-width: #{$width}
+      .#{$breakpoint-scope}\:u-miw-#{$px}#{if($px != 0, px, null)}
+        min-width: #{$width}
 
 +generate-width(false)
 @each $breakpoint in map-keys($grid-breakpoints)

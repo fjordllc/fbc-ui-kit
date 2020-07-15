@@ -4,48 +4,38 @@ $rem: strip_unit($rem)
 
 =generate-margin($breakpoint-scope: false, $base-size: $base-size, $size-count: $size-count)
   @for $i from 0 through $size-count
+    $px: strip_unit($i * $base-size * $rem)
+    $margin: $i * $base-size
     @if $breakpoint-scope == false
-      .u-m-#{strip_unit($i * $base-size * $rem)}
-        margin: $i * $base-size
-      .u-mt-#{strip_unit($i * $base-size * $rem)}
-        margin-top: $i * $base-size
-      .u-mr-#{strip_unit($i * $base-size * $rem)}
-        margin-right: $i * $base-size
-      .u-mb-#{strip_unit($i * $base-size * $rem)}
-        margin-bottom: $i * $base-size
-      .u-ml-#{strip_unit($i * $base-size * $rem)}
-        margin-left: $i * $base-size
-      .u-m-vr-#{$i}
-        margin: vr($i)
+      .u-m-#{$px}#{if($px != 0, px, null)}
+        margin: $margin
+      .u-mt-#{$px}#{if($px != 0, px, null)}
+        margin-top: $margin
+      .u-mr-#{$px}#{if($px != 0, px, null)}
+        margin-right: $margin
+      .u-mb-#{$px}#{if($px != 0, px, null)}
+        margin-bottom: $margin
+      .u-ml-#{$px}#{if($px != 0, px, null)}
+        margin-left: $margin
       .u-mt-vr-#{$i}
         margin-top: vr($i)
-      .u-mr-vr-#{$i}
-        margin-right: vr($i)
       .u-mb-vr-#{$i}
         margin-bottom: vr($i)
-      .u-ml-vr-#{$i}
-        margin-left: vr($i)
     @else
-      .#{$breakpoint-scope}\:u-m-#{strip_unit($i * $base-size * $rem)}
-        margin: $i * $base-size
-      .#{$breakpoint-scope}\:u-mt-#{strip_unit($i * $base-size * $rem)}
-        margin-top: $i * $base-size
-      .#{$breakpoint-scope}\:u-mr-#{strip_unit($i * $base-size * $rem)}
-        margin-right: $i * $base-size
-      .#{$breakpoint-scope}\:u-mb#{strip_unit($i * $base-size * $rem)}
-        margin-bottom: $i * $base-size
-      .#{$breakpoint-scope}\:u-ml#{strip_unit($i * $base-size * $rem)}
-        margin-left: $i * $base-size
-      .#{$breakpoint-scope}\:u-m-vr-#{$i}
-        margin: vr($i)
+      .#{$breakpoint-scope}\:u-m-#{$px}#{if($px != 0, px, null)}
+        margin: $margin
+      .#{$breakpoint-scope}\:u-mt-#{$px}#{if($px != 0, px, null)}
+        margin-top: $margin
+      .#{$breakpoint-scope}\:u-mr-#{$px}#{if($px != 0, px, null)}
+        margin-right: $margin
+      .#{$breakpoint-scope}\:u-mb#{$px}#{if($px != 0, px, null)}
+        margin-bottom: $margin
+      .#{$breakpoint-scope}\:u-ml#{$px}#{if($px != 0, px, null)}
+        margin-left: $margin
       .#{$breakpoint-scope}\:u-mt-vr-#{$i}
         margin-top: vr($i)
-      .#{$breakpoint-scope}\:u-mr-vr-#{$i}
-        margin-right: vr($i)
       .#{$breakpoint-scope}\:u-mb-vr-#{$i}
         margin-bottom: vr($i)
-      .#{$breakpoint-scope}\:u-ml-vr-#{$i}
-        margin-left: vr($i)
 
 +generate-margin(false)
 @each $breakpoint in map-keys($grid-breakpoints)

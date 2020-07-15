@@ -34,6 +34,8 @@
                     td
                       | .u-lh-vr-#{i}
                     td
-                      | line-height: #{i * 0.25}rem
+                      - value = "%.15g"%(i * 0.25)
+                      | line-height: #{value}#{"rem" if value != "0"}
                     td
-                      | #{i * 0.25 * 16}px
+                      - value = "%.15g"%(i * 0.25 * 16)
+                      | #{value}#{"px" if value != "0"}
