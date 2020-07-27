@@ -1,9 +1,13 @@
 .o-basic-footer
-  +padding(vertical, 4em)
+  +padding(vertical, vr(16))
   background-color: $shade
   .m-list
-    font-size: .875rem
+    font-size: fz(2)
+  .m-list__title
+    +text-block(fz(3) 1.4)
   .m-list__items
-    margin-top: 1.25em
+    margin-top: vr(4)
+  .m-list__item
+    +text-block(fz(2) 1.4)
   .a-hr-border
-    +margin(vertical, 4em 2em)
+    +margin(vertical, vr(16) vr(8))

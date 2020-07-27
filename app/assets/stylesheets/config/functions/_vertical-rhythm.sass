@@ -1,2 +1,5 @@
-@function vr($line-count: 1, $minimum-vertical-rhythm: $minimum-vertical-rhythm)
-  @return $line-count * $minimum-vertical-rhythm
+@function vr($line-count: 1, $bw: null, $vr: $vr)
+  @if $bw
+    @return calc(#{$line-count * $vr} - #{$bw})
+  @else
+    @return $line-count * $vr

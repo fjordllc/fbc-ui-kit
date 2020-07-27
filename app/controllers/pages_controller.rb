@@ -13,6 +13,8 @@ class PagesController < ApplicationController
       "lp"
     when "login", "signup", "new_password"
       "auth"
+    when "blog"
+      "blog"
     else
       'application'
     end

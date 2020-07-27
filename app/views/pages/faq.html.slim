@@ -1,11 +1,18 @@
-= render "o_basic_breadcrumbs"
+section.o-lp-page
+  header.o-lp-page-header
+    .o-lp-page-header__main
+      nav.o-basic-breadcrumbs
+        .container.is-mxw-100pc
+          = render "o_basic_breadcrumbs"
+      .container
+        .o-lp-page-header__inner
+          h1.o-lp-content__title
+            | よくある質問
+
 .t-lp__contents
   .o-lp-content
     .container.is-lg
       .o-lp-content__inner
-        .o-lp-content__header
-          h2.o-lp-content__title
-            | よくある質問
         .o-lp-content__body
           .t-grids
             .t-grids__item.u-col-3

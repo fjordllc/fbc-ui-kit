@@ -6,9 +6,9 @@
   .a-link-block
     +padding(horizontal, 1.25rem)
   .m-style-block:not(:last-child)
-    margin-bottom: 1.25rem
+    margin-bottom: vr(5)
   .a-basic-table
-    font-size: .875rem
+    font-size: fz(2)
 
 a.m-card
   +block-link
@@ -20,13 +20,13 @@ a.m-card
     +position(relative)
 
 .m-card__header
-  padding: .875rem 1.25rem
+  padding: vr(3) 1.25rem
   display: flex
   align-items: center
   justify-content: space-between
 
 .m-card__title
-  +text-block(1.25rem 1.4, 600)
+  +text-block(fz(5) 1.4, 600)
 
 .m-card__body
   &>.a-basic-table
@@ -44,17 +44,17 @@ a.m-card
   padding: 1em 1.5em
 
 .m-card__blocks
-  +padding(vertical, 1.25rem)
-  margin-bottom: -1.25rem
+  +padding(vertical, vr(5))
+  margin-bottom: vr(5) * -1
   &:last-child
     margin-bottom: 0
   .row
-    margin-bottom: -1.25rem
+    margin-bottom: vr(5) * -1
   .row + .row
-    margin-top: 1.25rem
+    margin-top: vr(5)
   [class*=col-]
-    margin-bottom: 1.25rem
+    margin-bottom: vr(5)
 
 .m-card__footer
   .m-horizontal-buttons
-    padding: .5rem 1rem
+    padding: vr(3) 1rem

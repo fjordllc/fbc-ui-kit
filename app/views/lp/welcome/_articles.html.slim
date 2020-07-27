@@ -5,18 +5,20 @@
         h2.o-lp-content__title
           | お知らせ
       .o-lp-content__body
-        .o-lp-content__row
-          .t-grids
-            .t-grids__item.u-col-8.md-down:u-col-12
-              = render "/lp/article_summary"
-            .t-grids__item.u-col-4.md-down:u-col-12
-              = render "/lp/vertical_articles"
+        //
+          .o-lp-content__row
+            .t-grids
+              .t-grids__item.u-col-8.md-down:u-col-12
+                = render "/lp/article_summary"
+              .t-grids__item.u-col-4.md-down:u-col-12
+                = render "/lp/vertical_articles"
         .o-lp-content__row
           = render "/lp/featured_articles"
-        .o-lp-content__row
-          .t-grids
-            .t-grids__item.u-col-12.md-down:u-col-12
-              = render "/lp/article_summary"
+        //
+          .o-lp-content__row
+            .t-grids
+              .t-grids__item.u-col-12.md-down:u-col-12
+                = render "/lp/article_summary"
         .o-lp-content__row
           .m-horizontal-buttons
             .m-horizontal-buttons__items

@@ -1,0 +1,8 @@
+doctype html
+html
+  = render("head")
+  body.is-blog(class="is-#{params[:id]} #{body_class}")
+    .t-blog
+      = render "/lp/lp_header"
+      = yield
+      = render "/lp/lp_footer"

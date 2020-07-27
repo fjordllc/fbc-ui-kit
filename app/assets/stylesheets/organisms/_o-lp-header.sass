@@ -1,24 +1,6 @@
-$lp-header-height: 4.25rem !default
-
 .o-lp-header
-  background-color: $main
-  background-image: linear-gradient(45deg, $main, #4e66da)
-  +position(relative)
-  &::before
-    content: ""
-    display: block
-    background-image: image_url("background.svg")
-    +position(absolute, left 0, bottom 0, right 0, top 0, 1)
-    background-repeat: repeat
-    background-size: 10%
-    +size(100%)
-    opacity: .05
-  .is-welcome-index &
-    +position(absolute, left 0, top 0, 4)
-    width: 100%
-    background: none
-  .is-welcome-index &::before
-    content: none
+  +position(absolute, left 0, top 0, 4)
+  width: 100%
   .container
     height: inherit
   .m-horizontal-icon-blocks
@@ -45,21 +27,22 @@ $lp-header-height: 4.25rem !default
     color: $reversal-text
     position: relative
     transition: all .2s ease-out
+    *
+      cursor: pointer
     &::before
       content: ""
       opacity: 0
       border-radius: 2em
-      background-color: $main
+      background-color: rgba(black, .4)
       display: block
       +position(absolute, left 50%, top 50%, 0)
       transform: translate(-50%, -50%)
       +size(70%)
       transition: all .2s ease-out
     &:hover
-      background-color: $warning
       &::before
         +size(100%)
-        opacity: .3
+        opacity: 1
 
 .o-lp-header__auth-links
   display: flex

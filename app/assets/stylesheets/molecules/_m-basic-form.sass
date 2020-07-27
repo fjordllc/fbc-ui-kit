@@ -1,20 +1,19 @@
 .m-basic-form
   .m-form-item
     &:not(:last-child)
-      margin-bottom: 1.5em
+      margin-bottom: vr(6)
   .m-check-list
-    margin-top: .25em
+    margin-top: vr(1)
   .a-form-label
-    margin-bottom: .25em
+    +text-block(fz(3) 1.4)
+    margin-bottom: vr(1)
 
 .m-form-item__end
   .a-form-help
-    margin-top: .5em
-    font-size: .875rem
-
+    +text-block(fz(2) 1.6 vr(2))
 
 .m-basic-form__items
-  margin-bottom: 1.5em
+  margin-bottom: vr(6)
 
 .m-basic-form__actions
   +flex-grid(1em, wrap, center)

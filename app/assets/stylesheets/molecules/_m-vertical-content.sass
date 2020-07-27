@@ -1,13 +1,12 @@
 .m-vertical-content__title
-  +text-block(1.25rem 1.4, center 700)
+  +text-block(fz(6) 1.4, center 700)
 
 .m-vertical-content__row
   &:not(:first-child)
-    margin-top: .75em
+    margin-top: vr(3)
 
 .m-vertical-content__body
-  margin-top: -.25em
-  font-size: 1rem
+  +text-block(fz(3) 1.4)
 
 .m-vertical-content__image
   +margin(horizontal, auto)

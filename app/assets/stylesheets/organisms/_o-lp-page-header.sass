@@ -1,0 +1,25 @@
+.o-lp-page-header
+  +position(relative)
+  background-color: $main
+  background-image: linear-gradient(45deg, $main, #4e66da)
+  padding-top: $lp-header-height
+  color: $reversal-text
+  .o-basic-breadcrumbs
+    +position(absolute, left 0, top 0)
+  &::before
+    content: ""
+    display: block
+    background-image: image_url("background.svg")
+    +position(absolute, left 0, bottom 0, right 0, top 0, 1)
+    background-repeat: repeat
+    background-size: 20rem
+    +size(100%)
+    opacity: .05
+
+.o-lp-page-header__main
+  +position(relative, 1)
+  background-color: rgba(black, .2)
+
+.o-lp-page-header__inner
+  +padding(vertical, 3rem)
+  color: $reversal-text
