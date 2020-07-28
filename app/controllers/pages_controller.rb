@@ -9,8 +9,10 @@ class PagesController < ApplicationController
     case params[:id]
     when "index"
       "application"
-    when "welcome", "pp", "tos", "articles", "article", "practices", "faq", "coc", "contact"
+    when "welcome"
       "lp"
+    when "pp", "tos", "articles", "article", "practices", "faq", "coc", "contact"
+      "static"
     when "login", "signup", "new_password"
       "auth"
     when "blog"
