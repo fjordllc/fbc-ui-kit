@@ -1,5 +1,6 @@
 .o-side-local-nav
-  border-right: solid 1px $border-shade
+  +media-breakpoint-up(md)
+    border-right: solid 1px $border-shade
   .m-list__item
     +text-block(fz(3) 1.4)
     &:not(:first-child)

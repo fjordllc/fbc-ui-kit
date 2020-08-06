@@ -1,12 +1,10 @@
 section.o-lp-page
   header.o-lp-page-header
     .o-lp-page-header__main
-      nav.o-basic-breadcrumbs
-        .container.is-mxw-100pc
-          = render "o_basic_breadcrumbs"
+      = render "o_basic_breadcrumbs"
       .container
         .o-lp-page-header__inner
-          h1.o-lp-content__title
+          h1.o-lp-page-header__title
             | よくある質問
 
   .t-lp__contents
@@ -15,7 +13,7 @@ section.o-lp-page
         .o-lp-content__inner
           .o-lp-content__body
             .t-grids
-              .t-grids__item.u-col-3
+              .t-grids__item.md-up:u-col-3.sm-down:u-col-12
                 .o-side-local-nav
                   .m-list
                     .m-list__items
@@ -32,7 +30,7 @@ section.o-lp-page
                         = link_to "", class: "a-text-link" do
                           | ああああああ
               .t-grids__item.u-col-1
-              .t-grids__item.u-col-8
+              .t-grids__item.md-up:u-col-8.sm-down:u-col-12
                 .o-short-articles
                   .o-short-articles__item
                     .m-short-article

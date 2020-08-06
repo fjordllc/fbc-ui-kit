@@ -12,19 +12,19 @@ section.o-lp-page
                 | お知らせ一覧
       .container
         .o-lp-page-header__inner
-          h1.o-lp-content__title
+          .o-lp-page-header__title
             | お知らせ
 
   .t-lp__contents
-    .o-lp-content
-      .o-lp-content__inner
-        .o-lp-content__header
-          .o-lp-content__header-start
+    .o-lp-article
+      .o-lp-article__inner
+        .o-lp-article__header
+          .o-lp-article__header-start
             .container.is-lg
-              h1.o-lp-content__title.u-ff-YakuHanJP_Narrow
+              h1.o-lp-article__title.u-ff-YakuHanJP_Narrow
                 span.js-mikan
                   | 「ゼロからわかる Ruby 超入門」の著者、五十嵐邦明氏がプログラミングスクール「フィヨルドブートキャンプ」の顧問に就任
-          .o-lp-content__header-end
+          .o-lp-article__header-end
             .container.is-md
               .m-media-attributes__list
                 .m-inline-list
@@ -37,7 +37,7 @@ section.o-lp-page
                         = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
                         .m-media-attributes__author-name
                           | machida
-        .o-lp-content__body
+        .o-lp-article__body
           .container.is-md
             .a-long-text
                 p

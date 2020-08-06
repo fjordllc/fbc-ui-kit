@@ -39,10 +39,12 @@
   margin-bottom: .75rem
 
 .o-basic-main-visual__title
-  font-size: fz(9)
-  line-height: vr(20)
   font-weight: 700
   text-shadow: rgba(black, .3) 0 -1px 3px
+  +media-breakpoint-up(md)
+    +text-block(fz(9) 1.4)
+  +media-breakpoint-down(sm)
+    +text-block(fz(7) 1.4)
 
 .o-basic-main-visual__description
   text-shadow: rgba(black, .3) 0 0 .5em

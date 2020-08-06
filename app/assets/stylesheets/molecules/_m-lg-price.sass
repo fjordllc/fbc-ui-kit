@@ -1,13 +1,21 @@
 .m-lg-price
   display: inline-flex
   align-items: baseline
-  +position(relative, top -.15em)
+  justify-content: center
+  +media-breakpoint-up(md)
+    +position(relative, top -.15em)
+  +media-breakpoint-down(sm)
+    flex-wrap: wrap
 
 .m-lg-price__time
   font-size: .5em
   font-weight: 700
-  +position(relative, top -.0625em)
-  margin-right: .25em
+  +media-breakpoint-up(md)
+    +position(relative, top -.0625em)
+    margin-right: .25em
+  +media-breakpoint-down(sm)
+    flex-basis: 100%
+    margin-bottom: .5em
 
 .m-lg-price__unit
   font-size: .8125em
