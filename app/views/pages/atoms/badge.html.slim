@@ -16,10 +16,10 @@
 
 = render "atoms_tabs"
 .t-fixed-left-nav__body
-  .container.is-mxw-100pc
-    .t-grids
+  .l-container.is-mxw-100pc
+    .l-grids
       - sizes.each do |size|
-        .t-grids__item.u-col-6
+        .l-grids__item.u-col-6
           .o-app-content
             .m-card
               .m-card__header
@@ -27,7 +27,7 @@
                   | Size #{size}
               hr.a-hr-border
               .m-card__body
-                .container
+                .l-container
                   .m-card__blocks
                     - ui_colors.each do |color|
                       .row

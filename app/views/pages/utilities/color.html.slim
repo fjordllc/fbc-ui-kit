@@ -16,13 +16,13 @@
 .t-fixed-left-nav__body
   .t-fixed-left-nav__contents
     .o-app-content
-      .container.is-mxw-100pc
+      .l-container.is-mxw-100pc
         .o-app-content__header
           h3.o-app-content__title
             | background-color
-        .t-grids
+        .l-grids
           - ["main", "primary", "secondary", "warning", "danger", "success", "info", "gray"].each do |color|
-            .t-grids__item.u-col-4
+            .l-grids__item.u-col-4
               .o-swatches
                 .o-swatches__header(class= "u-bgc-#{color}-500")
                   h2.o-swatches__title
@@ -35,13 +35,13 @@
                       | u-bgc-#{color}-#{i * 100}
 
     .o-app-content
-      .container.is-mxw-100pc
+      .l-container.is-mxw-100pc
         .o-app-content__header
           h2.o-app-content__title
             | color
-        .t-grids
+        .l-grids
           - ["main", "primary", "secondary", "warning", "danger", "success", "info", "gray"].each do |color|
-            .t-grids__item.u-col-3
+            .l-grids__item.u-col-3
               table.a-basic-table
                 thead
                   tr
@@ -50,20 +50,20 @@
                 tbody
                   tr
                     td(class= "u-c-#{color}-50")
-                      | u-bgc-#{color}-50
+                      | u-c-#{color}-50
                   - (1..9).each do |i|
                     tr
                       td(class= "u-c-#{color}-#{i * 100}")
-                        | u-bgc-#{color}-#{i * 100}
+                        | u-c-#{color}-#{i * 100}
 
     .o-app-content
-      .container.is-mxw-100pc
+      .l-container.is-mxw-100pc
         .o-app-content__header
           h2.o-app-content__title
             | border-color
-        .t-grids
+        .l-grids
           - ["main", "primary", "secondary", "warning", "danger", "success", "info", "gray"].each do |color|
-            .t-grids__item.u-col-3
+            .l-grids__item.u-col-3
               table.a-basic-table
                 thead
                   tr

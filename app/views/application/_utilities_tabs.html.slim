@@ -1,5 +1,5 @@
 .o-basic-tabs
-  .container.is-mxw-100pc
+  .l-container.is-mxw-100pc
     .o-basic-tabs__items
       .o-basic-tabs__item
         = link_to "/utilities/typography", class: "o-basic-tabs__item-link #{current?("utilities/typography") ? "is-active" : ""}" do
@@ -16,6 +16,9 @@
       .o-basic-tabs__item
         = link_to "/utilities/line_height", class: "o-basic-tabs__item-link #{current?("utilities/line_height") ? "is-active" : ""}" do
           | Line Height
+      .o-basic-tabs__item
+        = link_to "/utilities/display", class: "o-basic-tabs__item-link #{current?("utilities/display") ? "is-active" : ""}" do
+          | Display
       .o-basic-tabs__item
         = link_to "/utilities/vertical_rhythm", class: "o-basic-tabs__item-link #{current?("utilities/vertical_rhythm") ? "is-active" : ""}" do
           | Vertical Rhythm

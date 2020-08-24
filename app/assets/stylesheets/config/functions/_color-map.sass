@@ -22,3 +22,8 @@ $baseColors: (main: $main, primary: $primary, secondary: $secondary, warning: $w
     $colors: map-merge($colors, (#{$color}-#{$variations / 2 * 100}: $value))
 
   @return $colors
+
+@function c($colorName: null)
+  @each $color, $value in colorMap($baseColors, 10)
+    @if $colorName == $color
+      @return $value

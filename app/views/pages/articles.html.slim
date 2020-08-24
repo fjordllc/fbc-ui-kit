@@ -1,8 +1,8 @@
-section.o-lp-page
-  header.o-lp-page-header
-    .o-lp-page-header__main
+section.o-static-page
+  header.o-static-page-header
+    .o-static-page-header__main
       nav.o-basic-breadcrumbs
-        .container.is-mxw-100pc
+        .l-container.is-mxw-100pc
           ol.o-basic-breadcrumbs__items
             li.o-basic-breadcrumbs__item
               = link_to "", class: "o-basic-breadcrumbs__item-link" do
@@ -10,186 +10,184 @@ section.o-lp-page
             li.o-basic-breadcrumbs__item
               = link_to "", class: "o-basic-breadcrumbs__item-link" do
                 | お知らせ一覧
-      .container
-        .o-lp-page-header__inner
-          h1.o-lp-page-header__title
+      .l-container
+        .o-static-page-header__inner
+          h1.o-static-page-header__title
             | お知らせ
 
-  .t-lp__contents
-    .o-lp-content
-      .container
-        .o-lp-content__inner
-          .o-lp-content__body
-            .o-lp-content__row
-              .o-horizontal-medias
-                .o-horizontal-medias__items
-                  .t-grids
-                    .t-grids__item.md-up:u-col-4.sm-down:u-col-12
-                      .o-horizontal-medias__item
-                        = link_to "", class: "m-medias-media" do
-                          .m-medias-media__row
-                            .m-medias-media__image-container
-                              = image_tag("https://via.placeholder.com/500", class: "m-medias-media__image")
-                          .m-medias-media__row
-                            .m-media-attributes
-                              .m-media-attributes__col
-                                .m-media-attributes__row
-                                  h2.m-media-attributes__title
-                                    | どんな小さな羽さえもな羽さえもそよがぬ
-                                .m-media-attributes__row
-                                  .m-media-attributes__list
-                                    .m-inline-list
-                                      .m-inline-list__items
-                                        .m-inline-list__item
-                                          date.m-media-attributes__date
-                                            | 2020年12月24日
-                                        .m-inline-list__item
-                                          .m-media-attributes__author
-                                            = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
-                                            .m-media-attributes__author-name
-                                              | machida
-                    .t-grids__item.md-up:u-col-4.sm-down:u-col-12
-                      .o-horizontal-medias__item
-                        = link_to "", class: "m-medias-media" do
-                          .m-medias-media__row
-                            .m-medias-media__image-container
-                              = image_tag("https://via.placeholder.com/500", class: "m-medias-media__image")
-                          .m-medias-media__row
-                            .m-media-attributes
-                              .m-media-attributes__col
-                                .m-media-attributes__row
-                                  h2.m-media-attributes__title
-                                    | どんな小さな羽さえもな羽さえもそよがぬ
-                                .m-media-attributes__row
-                                  .m-media-attributes__list
-                                    .m-inline-list
-                                      .m-inline-list__items
-                                        .m-inline-list__item
-                                          date.m-media-attributes__date
-                                            | 2020年12月24日
-                                        .m-inline-list__item
-                                          .m-media-attributes__author
-                                            = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
-                                            .m-media-attributes__author-name
-                                              | machida
-                    .t-grids__item.md-up:u-col-4.sm-down:u-col-12
-                      .o-horizontal-medias__item
-                        = link_to "", class: "m-medias-media" do
-                          .m-medias-media__row
-                            .m-medias-media__image-container
-                              = image_tag("https://via.placeholder.com/500", class: "m-medias-media__image")
-                          .m-medias-media__row
-                            .m-media-attributes
-                              .m-media-attributes__col
-                                .m-media-attributes__row
-                                  h2.m-media-attributes__title
-                                    | どんな小さな羽さえもな羽さえもそよがぬ
-                                .m-media-attributes__row
-                                  .m-media-attributes__list
-                                    .m-inline-list
-                                      .m-inline-list__items
-                                        .m-inline-list__item
-                                          date.m-media-attributes__date
-                                            | 2020年12月24日
-                                        .m-inline-list__item
-                                          .m-media-attributes__author
-                                            = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
-                                            .m-media-attributes__author-name
-                                              | machida
-                    .t-grids__item.md-up:u-col-4.sm-down:u-col-12
-                      .o-horizontal-medias__item
-                        = link_to "", class: "m-medias-media" do
-                          .m-medias-media__row
-                            .m-medias-media__image-container
-                              = image_tag("https://via.placeholder.com/500", class: "m-medias-media__image")
-                          .m-medias-media__row
-                            .m-media-attributes
-                              .m-media-attributes__col
-                                .m-media-attributes__row
-                                  h2.m-media-attributes__title
-                                    | どんな小さな羽さえもな羽さえもそよがぬ
-                                .m-media-attributes__row
-                                  .m-media-attributes__list
-                                    .m-inline-list
-                                      .m-inline-list__items
-                                        .m-inline-list__item
-                                          date.m-media-attributes__date
-                                            | 2020年12月24日
-                                        .m-inline-list__item
-                                          .m-media-attributes__author
-                                            = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
-                                            .m-media-attributes__author-name
-                                              | machida
-                    .t-grids__item.md-up:u-col-4.sm-down:u-col-12
-                      .o-horizontal-medias__item
-                        = link_to "", class: "m-medias-media" do
-                          .m-medias-media__row
-                            .m-medias-media__image-container
-                              = image_tag("https://via.placeholder.com/500", class: "m-medias-media__image")
-                          .m-medias-media__row
-                            .m-media-attributes
-                              .m-media-attributes__col
-                                .m-media-attributes__row
-                                  h2.m-media-attributes__title
-                                    | どんな小さな羽さえもな羽さえもそよがぬ
-                                .m-media-attributes__row
-                                  .m-media-attributes__list
-                                    .m-inline-list
-                                      .m-inline-list__items
-                                        .m-inline-list__item
-                                          date.m-media-attributes__date
-                                            | 2020年12月24日
-                                        .m-inline-list__item
-                                          .m-media-attributes__author
-                                            = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
-                                            .m-media-attributes__author-name
-                                              | machida
-                    .t-grids__item.md-up:u-col-4.sm-down:u-col-12
-                      .o-horizontal-medias__item
-                        = link_to "", class: "m-medias-media" do
-                          .m-medias-media__row
-                            .m-medias-media__image-container
-                              = image_tag("https://via.placeholder.com/500", class: "m-medias-media__image")
-                          .m-medias-media__row
-                            .m-media-attributes
-                              .m-media-attributes__col
-                                .m-media-attributes__row
-                                  h2.m-media-attributes__title
-                                    | どんな小さな羽さえもな羽さえもそよがぬ
-                                .m-media-attributes__row
-                                  .m-media-attributes__list
-                                    .m-inline-list
-                                      .m-inline-list__items
-                                        .m-inline-list__item
-                                          date.m-media-attributes__date
-                                            | 2020年12月24日
-                                        .m-inline-list__item
-                                          .m-media-attributes__author
-                                            = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
-                                            .m-media-attributes__author-name
-                                              | machida
-            .o-lp-content__row
-              nav.o-pagination
-                ul.o-pagination__items
-                  li.o-pagination__item.is-prev
-                    a.o-pagination__item-link.is-prev href="" rel="prev"
-                      i.fbc-icon-angle-double-left
-                  li.o-pagination__item.is-start
-                    a.o-pagination__item-link.is-start href="/pages?page=5"
-                      i.fbc-icon-angle-left
-                  li.o-pagination__item
-                    a.o-pagination__item-link href=""  1
-                  li.o-pagination__item
-                    a.o-pagination__item-link href=""  2
-                  li.o-pagination__item
-                    a.o-pagination__item-link.is-active href=""  3
-                  li.o-pagination__item
-                    a.o-pagination__item-link href=""  4
-                  li.o-pagination__item
-                    a.o-pagination__item-link href=""  5
-                  li.o-pagination__item.is-next
-                    a.o-pagination__item-link.is-next href=""
-                      i.fbc-icon-angle-right
-                  li.o-pagination__item.is-last
-                    a.o-pagination__item-link.is-last href=""
-                      i.fbc-icon-angle-double-right
+  .o-static-page-body
+    .l-container.is-xxl
+      .o-static-page-body__inner
+        .o-static-page-body__row
+          .o-horizontal-medias
+            .o-horizontal-medias__items
+              .l-grids
+                .l-grids__item.md-up:u-col-4.sm-down:u-col-12
+                  .o-horizontal-medias__item
+                    = link_to "", class: "m-medias-media" do
+                      .m-medias-media__row
+                        .m-medias-media__image-container
+                          = image_tag("https://via.placeholder.com/500", class: "m-medias-media__image")
+                      .m-medias-media__row
+                        .m-media-attributes
+                          .m-media-attributes__col
+                            .m-media-attributes__row
+                              h2.m-media-attributes__title
+                                | どんな小さな羽さえもな羽さえもそよがぬ
+                            .m-media-attributes__row
+                              .m-media-attributes__list
+                                .m-inline-list
+                                  .m-inline-list__items
+                                    .m-inline-list__item
+                                      date.m-media-attributes__date
+                                        | 2020年12月24日
+                                    .m-inline-list__item
+                                      .m-media-attributes__author
+                                        = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
+                                        .m-media-attributes__author-name
+                                          | machida
+                .l-grids__item.md-up:u-col-4.sm-down:u-col-12
+                  .o-horizontal-medias__item
+                    = link_to "", class: "m-medias-media" do
+                      .m-medias-media__row
+                        .m-medias-media__image-container
+                          = image_tag("https://via.placeholder.com/500", class: "m-medias-media__image")
+                      .m-medias-media__row
+                        .m-media-attributes
+                          .m-media-attributes__col
+                            .m-media-attributes__row
+                              h2.m-media-attributes__title
+                                | どんな小さな羽さえもな羽さえもそよがぬ
+                            .m-media-attributes__row
+                              .m-media-attributes__list
+                                .m-inline-list
+                                  .m-inline-list__items
+                                    .m-inline-list__item
+                                      date.m-media-attributes__date
+                                        | 2020年12月24日
+                                    .m-inline-list__item
+                                      .m-media-attributes__author
+                                        = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
+                                        .m-media-attributes__author-name
+                                          | machida
+                .l-grids__item.md-up:u-col-4.sm-down:u-col-12
+                  .o-horizontal-medias__item
+                    = link_to "", class: "m-medias-media" do
+                      .m-medias-media__row
+                        .m-medias-media__image-container
+                          = image_tag("https://via.placeholder.com/500", class: "m-medias-media__image")
+                      .m-medias-media__row
+                        .m-media-attributes
+                          .m-media-attributes__col
+                            .m-media-attributes__row
+                              h2.m-media-attributes__title
+                                | どんな小さな羽さえもな羽さえもそよがぬ
+                            .m-media-attributes__row
+                              .m-media-attributes__list
+                                .m-inline-list
+                                  .m-inline-list__items
+                                    .m-inline-list__item
+                                      date.m-media-attributes__date
+                                        | 2020年12月24日
+                                    .m-inline-list__item
+                                      .m-media-attributes__author
+                                        = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
+                                        .m-media-attributes__author-name
+                                          | machida
+                .l-grids__item.md-up:u-col-4.sm-down:u-col-12
+                  .o-horizontal-medias__item
+                    = link_to "", class: "m-medias-media" do
+                      .m-medias-media__row
+                        .m-medias-media__image-container
+                          = image_tag("https://via.placeholder.com/500", class: "m-medias-media__image")
+                      .m-medias-media__row
+                        .m-media-attributes
+                          .m-media-attributes__col
+                            .m-media-attributes__row
+                              h2.m-media-attributes__title
+                                | どんな小さな羽さえもな羽さえもそよがぬ
+                            .m-media-attributes__row
+                              .m-media-attributes__list
+                                .m-inline-list
+                                  .m-inline-list__items
+                                    .m-inline-list__item
+                                      date.m-media-attributes__date
+                                        | 2020年12月24日
+                                    .m-inline-list__item
+                                      .m-media-attributes__author
+                                        = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
+                                        .m-media-attributes__author-name
+                                          | machida
+                .l-grids__item.md-up:u-col-4.sm-down:u-col-12
+                  .o-horizontal-medias__item
+                    = link_to "", class: "m-medias-media" do
+                      .m-medias-media__row
+                        .m-medias-media__image-container
+                          = image_tag("https://via.placeholder.com/500", class: "m-medias-media__image")
+                      .m-medias-media__row
+                        .m-media-attributes
+                          .m-media-attributes__col
+                            .m-media-attributes__row
+                              h2.m-media-attributes__title
+                                | どんな小さな羽さえもな羽さえもそよがぬ
+                            .m-media-attributes__row
+                              .m-media-attributes__list
+                                .m-inline-list
+                                  .m-inline-list__items
+                                    .m-inline-list__item
+                                      date.m-media-attributes__date
+                                        | 2020年12月24日
+                                    .m-inline-list__item
+                                      .m-media-attributes__author
+                                        = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
+                                        .m-media-attributes__author-name
+                                          | machida
+                .l-grids__item.md-up:u-col-4.sm-down:u-col-12
+                  .o-horizontal-medias__item
+                    = link_to "", class: "m-medias-media" do
+                      .m-medias-media__row
+                        .m-medias-media__image-container
+                          = image_tag("https://via.placeholder.com/500", class: "m-medias-media__image")
+                      .m-medias-media__row
+                        .m-media-attributes
+                          .m-media-attributes__col
+                            .m-media-attributes__row
+                              h2.m-media-attributes__title
+                                | どんな小さな羽さえもな羽さえもそよがぬ
+                            .m-media-attributes__row
+                              .m-media-attributes__list
+                                .m-inline-list
+                                  .m-inline-list__items
+                                    .m-inline-list__item
+                                      date.m-media-attributes__date
+                                        | 2020年12月24日
+                                    .m-inline-list__item
+                                      .m-media-attributes__author
+                                        = image_tag("https://via.placeholder.com/100", class: "a-circle-image")
+                                        .m-media-attributes__author-name
+                                          | machida
+        .o-static-page-body__row
+          nav.o-pagination
+            ul.o-pagination__items
+              li.o-pagination__item.is-prev
+                a.o-pagination__item-link.is-prev href="" rel="prev"
+                  i.fbc-icon-angle-double-left
+              li.o-pagination__item.is-start
+                a.o-pagination__item-link.is-start href="/pages?page=5"
+                  i.fbc-icon-angle-left
+              li.o-pagination__item
+                a.o-pagination__item-link href=""  1
+              li.o-pagination__item
+                a.o-pagination__item-link href=""  2
+              li.o-pagination__item
+                a.o-pagination__item-link.is-active href=""  3
+              li.o-pagination__item
+                a.o-pagination__item-link href=""  4
+              li.o-pagination__item
+                a.o-pagination__item-link href=""  5
+              li.o-pagination__item.is-next
+                a.o-pagination__item-link.is-next href=""
+                  i.fbc-icon-angle-right
+              li.o-pagination__item.is-last
+                a.o-pagination__item-link.is-last href=""
+                  i.fbc-icon-angle-double-right

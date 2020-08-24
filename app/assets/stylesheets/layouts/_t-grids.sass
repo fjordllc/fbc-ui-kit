@@ -2,7 +2,7 @@ $grid-gap: 2rem !default
 $grid-gap__sm: 1rem !default
 $grid-columns-count: 12
 
-.t-grids
+.l-grids
   display: grid
   grid-template-columns: repeat(#{$grid-columns-count}, 1fr)
   width: 100%
@@ -10,10 +10,10 @@ $grid-columns-count: 12
     grid-gap: $grid-gap
   +media-breakpoint-down(sm)
     grid-gap: $grid-gap__sm
-  .t-grids + &
+  .l-grids + &
     margin-top: calc(#{$grid-gap} * 1.5)
 
-.t-grids__item
+.l-grids__item
   height: 100%
   @for $i from 1 through $grid-columns-count
     &.u-col-#{$i}

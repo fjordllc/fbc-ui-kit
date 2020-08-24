@@ -1,0 +1,37 @@
+= render "page_header", title: "Utilities" do
+  .m-horizontal-buttons
+    .m-horizontal-buttons__items
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-primary is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-warning is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-danger is-md" do
+          | ああああああ
+
+= render "utilities_tabs"
+
+.t-fixed-left-nav__body
+  .t-fixed-left-nav__contents
+    .l-container.is-mxw-100pc
+      .l-grids
+        .l-grids__item.u-col-6
+          .o-app-content
+            .o-app-content__header
+              h2.o-app-content__title
+                | display
+            table.a-basic-table
+              thead
+                tr
+                  th class
+                  th value
+              tbody
+                - displays = "inline", "block", "list-item", "run-in", "inline-block", "table", "inline-table", "table-row-group", "table-header-group", "table-footer-group", "table-row", "table-column-group", "table-column", "table-cell", "table-caption", "ruby", "ruby-base", "ruby-text", "ruby-base-container", "ruby-text-container", "none", "inherit", "flex", "inline-flex", "grid", "inline-grid"
+                - displays.each do |display|
+                  tr
+                    td
+                      | .u-d-#{display}
+                    td
+                      | display: #{display}

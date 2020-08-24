@@ -1,9 +1,13 @@
-.t-lp__contents
-  .o-lp-content
-    .container.is-md
-      .o-lp-content__inner
-        .o-lp-content__header
-          h2.o-lp-content__title
+section.o-static-page
+  header.o-static-page-header
+    .o-static-page-header__main
+      = render "o_basic_breadcrumbs"
+      .l-container
+        .o-static-page-header__inner
+          h1.o-static-page-header__title
             | お問い合わせ
-        .o-lp-content__body
-          = render "/lp/contact_form"
+
+  .o-static-page-body
+    .l-container.is-md
+      .o-static-page-body__inner
+        = render "/lp/contact_form"

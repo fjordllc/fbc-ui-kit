@@ -1,0 +1,19 @@
+section.o-blog-page
+  header.o-blog-page-header
+    .o-blog-page-header__main
+      .l-container.is-md
+        .o-blog-page-header__inner
+          h1.o-blog-page-header__title
+            | Home
+
+  .o-blog-page-body
+    .l-container.is-md
+      .o-blog-page-body__inner
+        .o-blog-articles
+          .o-blog-articles__items
+            .m-articles-item
+              = link_to "", class: "m-articles-item__link" do
+                h2.m-articles-item__title
+                  | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声
+                date.m-articles-item__date
+                  | 2020/02/08

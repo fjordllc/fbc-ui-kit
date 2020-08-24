@@ -1,14 +1,30 @@
-.o-basic-footer
-  .container
-    .o-basic-footer__inner
-      = render "/lp/footer_nav"
-    hr.a-hr-border
-      .m-copy-right
-        span
-          | Copyright
-        span
-          i.far.fa-copyright
-        span
-          = Time.now.year
-        span
-          | 合同会社フィヨルド
+.o-lp-footer
+  .l-container
+    .o-lp-footer__inner
+      .o-lp-footer__row
+        = render "/lp/footer_nav"
+      hr.a-hr-border
+      .o-lp-footer__row
+        .o-lp-footer-site-meta
+          .o-lp-footer-site-meta__start
+            .m-copy-right
+              span
+                | Copyright
+              span
+                i.far.fa-copyright
+              span
+                = Time.now.year
+              span
+                | 合同会社フィヨルド
+          .o-lp-footer-site-meta__end
+            .m-inline-list
+              .m-inline-list__items
+                .m-inline-list__item
+                  = link_to "" , class: "a-text-link" do
+                    | プライバシーポリシー
+                .m-inline-list__item
+                  = link_to "" , class: "a-text-link" do
+                    | 利用規約
+                .m-inline-list__item
+                  = link_to "" , class: "a-text-link" do
+                    | アンチハラスメントポリシー

@@ -19,11 +19,8 @@ $grid-breakpoints: (xs: 0, sm: 34em, md: 48em, lg: 62em, xl: 75em) !default
 $enable-grid-classes: true !default
 
 // Grid columns
-
 $grid-columns: 12 !default
 $grid-gutter-width: 2rem !default
 $grid-row-columns: 6 !default
 $container-padding-x: 1rem !default
-//$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px) !default
-$container-max-widths: (xl: 1140px) !default
-+_assert-ascending($container-max-widths, "$container-max-widths")
+$container-max-widths: (xs: 320px, sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1400px) !default

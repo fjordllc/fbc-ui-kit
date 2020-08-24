@@ -11,11 +11,11 @@ class PagesController < ApplicationController
       "application"
     when "welcome"
       "lp"
-    when "pp", "tos", "articles", "article", "practices", "faq", "coc", "contact"
+    when "pp", "tos", "articles", "article", "practices", "faq", "coc", "contact", "typography_test"
       "static"
     when "login", "signup", "new_password"
       "auth"
-    when "blog"
+    when "blog", "blog/index", "blog/show"
       "blog"
     else
       'application'

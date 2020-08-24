@@ -1,7 +1,7 @@
 .t-fixed-left-nav__body
   .t-fixed-left-nav__contents
     .o-app-content
-      .container.is-mxw-100pc
+      .l-container.is-mxw-100pc
         .m-inline-lists
           .m-inline-lists__row
             .m-inline-list
@@ -35,6 +35,9 @@
                 .m-inline-list__item
                   = link_to static_page_path("contact"), class: "a-link-text" do
                     | お問い合わせ
+                .m-inline-list__item
+                  = link_to static_page_path("typography_test"), class: "a-link-text" do
+                    | タイポグラフィテスト
 
           .m-inline-lists__row
             .m-inline-list
@@ -70,5 +73,8 @@
                 | Blog
               .m-inline-list__items
                 .m-inline-list__item
-                  = link_to static_page_path("blog"), class: "a-link-text" do
+                  = link_to static_page_path("blog/index"), class: "a-link-text" do
                     | ブログトップ
+                .m-inline-list__item
+                  = link_to static_page_path("blog/show"), class: "a-link-text" do
+                    | ブログ記事

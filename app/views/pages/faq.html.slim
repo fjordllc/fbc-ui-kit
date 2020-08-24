@@ -1,58 +1,56 @@
-section.o-lp-page
-  header.o-lp-page-header
-    .o-lp-page-header__main
+section.o-static-page
+  header.o-static-page-header
+    .o-static-page-header__main
       = render "o_basic_breadcrumbs"
-      .container
-        .o-lp-page-header__inner
-          h1.o-lp-page-header__title
+      .l-container
+        .o-static-page-header__inner
+          h1.o-static-page-header__title
             | よくある質問
 
-  .t-lp__contents
-    .o-lp-content
-      .container.is-lg
-        .o-lp-content__inner
-          .o-lp-content__body
-            .t-grids
-              .t-grids__item.md-up:u-col-3.sm-down:u-col-12
-                .o-side-local-nav
-                  .m-list
-                    .m-list__items
-                      .m-list__item
-                        = link_to "", class: "a-text-link" do
-                          | 就職に関する質問
-                      .m-list__item
-                        = link_to "", class: "a-text-link" do
-                          | 利用料に関する質問
-                      .m-list__item
-                        = link_to "", class: "a-text-link" do
-                          | ああああああ
-                      .m-list__item
-                        = link_to "", class: "a-text-link" do
-                          | ああああああ
-              .t-grids__item.u-col-1
-              .t-grids__item.md-up:u-col-8.sm-down:u-col-12
-                .o-short-articles
-                  .o-short-articles__item
-                    .m-short-article
-                      h2.m-short-article__title
-                        | ああああああああああああああああ
-                      .m-short-article__body
-                        .a-short-text
-                          p
-                            | あああああああああああそれは黄金の昼下がり気ままにただようぼくらオールは二本ともあぶなげに小さな腕で漕がれ小さな手がぼくらのただよいを導こうとかっこうだけ申し訳につけてああ残酷な三人！こんな時間にこんな夢見る天気のもとで
-                  .o-short-articles__item
-                    .m-short-article
-                      h2.m-short-article__title
-                        | ああああああああああああああああ
-                      .m-short-article__body
-                        .a-short-text
-                          p
-                            | あああああああああああそれは黄金の昼下がり気ままにただようぼくらオールは二本ともあぶなげに小さな腕で漕がれ小さな手がぼくらのただよいを導こうとかっこうだけ申し訳につけてああ残酷な三人！こんな時間にこんな夢見る天気のもとで
-                  .o-short-articles__item
-                    .m-short-article
-                      h2.m-short-article__title
-                        | ああああああああああああああああ
-                      .m-short-article__body
-                        .a-short-text
-                          p
-                            | あああああああああああそれは黄金の昼下がり気ままにただようぼくらオールは二本ともあぶなげに小さな腕で漕がれ小さな手がぼくらのただよいを導こうとかっこうだけ申し訳につけてああ残酷な三人！こんな時間にこんな夢見る天気のもとで
+  .o-static-page-body
+    .l-container.is-xl
+      .o-static-page-body__inner
+        .l-grids
+          .l-grids__item.md-up:u-col-3.sm-down:u-col-12
+            .o-side-local-nav
+              .m-list
+                .m-list__items
+                  .m-list__item
+                    = link_to "", class: "a-text-link" do
+                      | 就職に関する質問
+                  .m-list__item
+                    = link_to "", class: "a-text-link" do
+                      | 利用料に関する質問
+                  .m-list__item
+                    = link_to "", class: "a-text-link" do
+                      | ああああああ
+                  .m-list__item
+                    = link_to "", class: "a-text-link" do
+                      | ああああああ
+          .l-grids__item.u-col-1
+          .l-grids__item.md-up:u-col-8.sm-down:u-col-12
+            .o-short-articles
+              .o-short-articles__item
+                .m-short-article
+                  h2.m-short-article__title
+                    | 学習を終えるのにどれくらいの時間がかかりますか？
+                  .m-short-article__body
+                    .a-short-text
+                      p
+                        | かかる時間は人それぞれですが、プログラム経験が全くない人の場合、大体900時間弱の時間がかかります。
+              .o-short-articles__item
+                .m-short-article
+                  h2.m-short-article__title
+                    | 就職先が決まっているのですが、就職までの間学習をしたいです。その場合、参加は可能ですか？
+                  .m-short-article__body
+                    .a-short-text
+                      p
+                        | はい、そのような場合も参加可能です。実際、フィヨルドブートキャンプは企業の新人研修でも利用されています。もし、企業の研修として利用する場合は法人用のプランがございますのでご連絡ください。
+              .o-short-articles__item
+                .m-short-article
+                  h2.m-short-article__title
+                    | ああああああああああああああああ
+                  .m-short-article__body
+                    .a-short-text
+                      p
+                        | あああああああああああそれは黄金の昼下がり気ままにただようぼくらオールは二本ともあぶなげに小さな腕で漕がれ小さな手がぼくらのただよいを導こうとかっこうだけ申し訳につけてああ残酷な三人！こんな時間にこんな夢見る天気のもとで
