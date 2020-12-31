@@ -12,7 +12,7 @@ section.o-blog-page
         .o-blog-articles
           .o-blog-articles__items
             .m-articles-item
-              = link_to "", class: "m-articles-item__link" do
+              = link_to static_page_path("blog/show"), class: "m-articles-item__link" do
                 h2.m-articles-item__title
                   | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声
                 date.m-articles-item__date
