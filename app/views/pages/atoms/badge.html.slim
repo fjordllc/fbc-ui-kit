@@ -17,44 +17,45 @@
 = render "atoms_tabs"
 .t-fixed-left-nav__body
   .l-container.is-mxw-100pc
-    .l-grids
-      - sizes.each do |size|
-        .l-grids__item.u-col-6
-          .o-app-content
-            .m-card
-              .m-card__header
-                h3.m-card__title
-                  | Size #{size}
-              hr.a-hr-border
-              .m-card__body
-                .l-container
-                  .m-card__blocks
-                    - ui_colors.each do |color|
-                      .row
-                        .col-xs-6.col-lg-4
-                          .m-style-block
-                            .m-style-block__start
-                              span(class="a-badge is-#{size} is-#{color}")
-                                | Badge
-                            .m-style-block__end
-                              pre.a-basic-code
-                                code
-                                  | .a-badge.is-#{size}.is-#{color}
-                        .col-xs-6.col-lg-4
-                          .m-style-block
-                            .m-style-block__start
-                              span(class="a-badge is-#{size} is-#{color} is-block")
-                                | Block Badge
-                            .m-style-block__end
-                              pre.a-basic-code
-                                code
-                                  | .a-badge.is-#{size}.is-#{color}.is-block
-                        .col-xs-6.col-lg-4
-                          .m-style-block
-                            .m-style-block__start
-                              span(class="a-badge is-#{size} is-#{color}-border")
-                                | Border Badge
-                            .m-style-block__end
-                              pre.a-basic-code
-                                code
-                                  | .a-badge.is-#{size}.is-#{color}-border
+    - sizes.each do |size|
+      .o-app-content
+        .o-app-content__header
+          h2.o-app-content__title
+            | .a-badge.is-#{size}
+        .m-card
+          .m-card__header
+            h3.m-card__title
+              | Size #{size}
+          hr.a-hr-border
+          .m-card__body
+            .l-container.is-mxw-100pc
+              .m-card__blocks
+                - ui_colors.each do |color|
+                  .l-grids
+                    .l-grids__item.u-col-4
+                      .m-style-block
+                        .m-style-block__start
+                          span(class="a-badge is-#{size} is-#{color}")
+                            | Badge
+                        .m-style-block__end
+                          pre.a-basic-code
+                            code
+                              | .a-badge.is-#{size}.is-#{color}
+                    .l-grids__item.u-col-4
+                      .m-style-block
+                        .m-style-block__start
+                          span(class="a-badge is-#{size} is-#{color} is-block")
+                            | Block Badge
+                        .m-style-block__end
+                          pre.a-basic-code
+                            code
+                              | .a-badge.is-#{size}.is-#{color}.is-block
+                    .l-grids__item.u-col-4
+                      .m-style-block
+                        .m-style-block__start
+                          span(class="a-badge is-#{size} is-#{color}-border")
+                            | Border Badge
+                        .m-style-block__end
+                          pre.a-basic-code
+                            code
+                              | .a-badge.is-#{size}.is-#{color}-border

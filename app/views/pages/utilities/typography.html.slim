@@ -30,8 +30,10 @@
                     .m-card__blocks
                       .u-fz-5.u-fw-600
                         | .u-fz-#{i}
-                      div(class="u-fz-#{i}")
+                      .u-mt-vr-3(class="u-fz-#{i}")
                         | それは黄金の昼下がり気ままにただようぼくら
+                    - unless i == 10
+                      hr.a-hr-border.u-mt-vr-6
 
         .l-grids__item.u-col-6
           .o-app-content
@@ -46,5 +48,7 @@
                     .m-card__blocks
                       .u-fz-5.u-fw-600
                         | .u-fw-#{i * 100}
-                      .u-fz-5(class="u-fw-#{i * 100}")
+                      .u-fz-5.u-mt-vr-3(class="u-fw-#{i * 100}")
                         | それは黄金の昼下がり気ままにただようぼくら
+                    - unless i == 10
+                      hr.a-hr-border.u-mt-vr-6

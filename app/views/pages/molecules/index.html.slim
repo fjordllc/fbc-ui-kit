@@ -1,0 +1,17 @@
+- sizes = %w[xs sm md lg xl]
+- ui_colors = %w[secondary primary info success warning danger disabled]
+
+= render "page_header", title: "Molecules" do
+  .m-horizontal-buttons
+    .m-horizontal-buttons__items
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-primary is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-warning is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-danger is-md" do
+          | ああああああ
+
+= render "molecules_tabs"

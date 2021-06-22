@@ -1,0 +1,7 @@
+.o-basic-tabs
+  .l-container.is-mxw-100pc
+    .o-basic-tabs__items
+      .o-basic-tabs__item
+        = link_to '/molecules/index',
+        class: "o-basic-tabs__item-link #{current?('molecules/index') ? 'is-active' : ''}" do
+          | Index

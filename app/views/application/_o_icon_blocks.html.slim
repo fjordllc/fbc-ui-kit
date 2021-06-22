@@ -8,17 +8,23 @@ nav.o-application-global-nav
           .a-icon-square__label
             | ホーム
       li.m-vertical-icon-blocks__item
-        = link_to static_page_path("atoms/button"), class: "a-icon-square" do
-          .a-icon-square__icon
-            i.fas.fa-shapes
-          .a-icon-square__label
-            | Atoms
-      li.m-vertical-icon-blocks__item
         = link_to static_page_path("utilities/typography"), class: "a-icon-square" do
           .a-icon-square__icon
             i.fas.fa-cog
           .a-icon-square__label
             | Utilities
+      li.m-vertical-icon-blocks__item
+        = link_to static_page_path("atoms/button"), class: "a-icon-square" do
+          .a-icon-square__icon
+            i.fas.fa-cube
+          .a-icon-square__label
+            | Atoms
+      li.m-vertical-icon-blocks__item
+        = link_to static_page_path("molecules/index"), class: "a-icon-square" do
+          .a-icon-square__icon
+            i.fas.fa-cubes
+          .a-icon-square__label
+            | Molecules
       li.m-vertical-icon-blocks__item
         = link_to static_page_path("welcome"), class: "a-icon-square" do
           .a-icon-square__icon
