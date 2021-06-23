@@ -1,3 +1,15 @@
-.a-hr-border
-  background-color: $border
-  +size(100% 1px)
+.a-border
+  border-color: $border
+  border-width: 0
+  &.is-solid
+    border-style: solid
+  &.is-dashed
+    border-style: dashed
+  &.is-dotted
+    border-style: dotted
+  &.is-horizontal
+    border-top-width: 1px
+    +size(100% 1px)
+  &.is-vertical
+    border-left-width: 1px
+    +size(1px 100%)

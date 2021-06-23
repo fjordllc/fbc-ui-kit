@@ -23,7 +23,7 @@
               .m-card__header
                 h2.m-card__title
                   | FontSize
-              hr.a-hr-border
+              hr.a-border.is-horizontal.is-solid
               .m-card__body
                 .l-container
                   - for i in 1..10
@@ -33,7 +33,7 @@
                       .u-mt-vr-3(class="u-fz-#{i}")
                         | それは黄金の昼下がり気ままにただようぼくら
                     - unless i == 10
-                      hr.a-hr-border.u-mt-vr-6
+                      hr.a-border.is-horizontal.is-solid.u-mt-vr-6
 
         .l-grids__item.u-col-6
           .o-app-content
@@ -41,7 +41,7 @@
               .m-card__header
                 h2.m-card__title
                   | FontWeight
-              hr.a-hr-border
+              hr.a-border.is-horizontal.is-solid
               .m-card__body
                 .l-container
                   - for i in 1..9
@@ -51,4 +51,4 @@
                       .u-fz-5.u-mt-vr-3(class="u-fw-#{i * 100}")
                         | それは黄金の昼下がり気ままにただようぼくら
                     - unless i == 10
-                      hr.a-hr-border.u-mt-vr-6
+                      hr.a-border.is-horizontal.is-solid.u-mt-vr-6

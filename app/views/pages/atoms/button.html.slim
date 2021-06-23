@@ -28,7 +28,7 @@
             .m-card__header
               h3.m-card__title
                 | Size #{size}
-            hr.a-hr-border
+            hr.a-border.is-horizontal.is-solid
             .m-card__body
               .l-container.is-mxw-100pc
                 .m-card__blocks
@@ -87,7 +87,7 @@
                               code
                                 | .is-button.is-#{size}.is-#{color}.is-block
                     - unless color == 'disabled'
-                      hr.a-hr-border.u-mt-vr-6.u-mb-vr-6
+                      hr.a-border.is-horizontal.is-solid.u-mt-vr-6.u-mb-vr-6
 
                   - ui_colors.each do |color|
                     .l-grids
@@ -144,4 +144,4 @@
                               code
                                 | .is-button.is-#{size}.is-border-#{color}.is-block
                     - unless color == 'disabled'
-                      hr.a-hr-border.u-mt-vr-6.u-mb-vr-6
+                      hr.a-border.is-horizontal.is-solid.u-mt-vr-6.u-mb-vr-6
