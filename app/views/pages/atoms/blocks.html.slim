@@ -1,0 +1,36 @@
+= render "page_header", title: "Atoms" do
+  .m-horizontal-buttons
+    .m-horizontal-buttons__items
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-primary is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-warning is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-danger is-md" do
+          | ああああああ
+
+= render "atoms_tabs"
+.t-fixed-left-nav__body
+  .t-fixed-left-nav__contents
+    .l-container.is-mxw-100pc
+      .l-grids
+        .l-grids__item.u-col-4
+          .o-app-content
+            .l-container.is-mxw-100pc
+              .o-app-content__header
+                h2.o-app-content__title
+                  | .a-icon-square
+              .m-card
+                .m-card__header
+                  .m-card__title
+                    | .a-icon-square
+                hr.a-hr-border
+                .m-card__body
+                  .m-card__blocks
+                    .l-container
+                      a.a-icon-square href="/molecules/index"
+                        .a-icon-square__icon
+                          i.fas.fa-cubes
+                        .a-icon-square__label Molecules

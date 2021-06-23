@@ -1,0 +1,46 @@
+- sizes = %w[xs sm md lg xl]
+- ui_colors = %w[secondary primary info success warning danger disabled]
+
+= render "page_header", title: "Molecules" do
+  .m-horizontal-buttons
+    .m-horizontal-buttons__items
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-primary is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-warning is-md" do
+          | ああああああ
+      .m-horizontal-buttons__item
+        = link_to "", class: "a-button is-danger is-md" do
+          | ああああああ
+
+= render "molecules_tabs"
+
+.t-fixed-left-nav__body
+  .t-fixed-left-nav__contents
+    .l-container.is-mxw-100pc
+      .l-grids
+        .l-grids__item.u-col-4
+          .o-app-content
+            .o-app-content__header
+              h2.o-app-content__title
+                | .m-vertical-icon-blocks
+            .m-card
+              .m-card__body
+                .l-container.is-mxw-100pc
+                  = render '/pages/molecules/m_vertical_icon_blocks'
+        .l-grids__item.u-col-4
+          .o-app-content
+            .o-app-content__header
+              h2.o-app-content__title
+                | .m-horizontal-icon-blocks
+            .m-card
+              .m-card__body
+                .l-container.is-mxw-100pc
+                  = render '/pages/molecules/m_horizontal_icon_blocks'
+        .l-grids__item.u-col-4
+          .o-app-content
+            .o-app-content__header
+              h2.o-app-content__title
+                | .m-link-blocks
+            = render '/pages/molecules/m_link_blocks'

@@ -1,7 +1,8 @@
 section.o-static-page
   header.o-static-page-header
     .o-static-page-header__main
-      = render "o_basic_breadcrumbs"
+      .o-lp-breadcrumbs
+        = render "o_basic_breadcrumbs"
       .l-container
         .o-static-page-header__inner
           h1.o-static-page-header__title
